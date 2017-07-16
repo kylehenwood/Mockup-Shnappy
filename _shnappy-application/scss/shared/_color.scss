@@ -1,0 +1,79 @@
+// Colors
+// ------
+
+// backgrounds
+$color-background-light: #f1f1f1;
+$color-background: #eeeeee;
+$color-background-transparent: rgba(#333,0.9);
+
+// text colors
+$text-grey: #5a5a58;
+$text-black: #333333;
+$text-white: #ffffff;
+$text-red: #F73415;
+$text-pink: #df3a62;
+
+// shadows
+$shadow-box: 0 2px 4px rgba(0,0,0,.12);
+$shadow-dropdown: 0 2px 12px rgba(0,0,0,0.4);
+
+$shadow-box: 0px 2px 6px -1px rgba(black, 0.3);
+$shadow-hover: 0px 2px 12px -1px rgba(black, 0.3);
+$shadow-active: 0px 2px 4px -1px rgba(black, 0.4);
+
+// neutral
+$color-black: #333333;
+
+// border colors
+$color-border-dark:#999999;
+$color-border: #b6b6b4;
+$color-border-light:#d9d9d9;
+
+// Primary Raygun Greys (use $color-grey-darkest / Jet DK instead of Black)
+$color-grey-darkest: #343434;
+$color-grey-darker: #5a5a58;
+$color-grey-dark: #999999;
+$color-grey: #b6b6b4;
+$color-grey-light: #cfcfcd;
+$color-grey-lighter: #d9d9d9;
+$color-grey-lightest: #f1f1f1 ;
+
+// Pink
+$color-pink-dark: #b22e4e;
+$color-pink: #df3a62;
+$color-pink-light: #e56181;
+
+// Yellow
+$color-yellow-dark: #ccb92e;
+$color-yellow: #ffe739;
+$color-yellow-light: #ffec61;
+
+// Green
+$color-green-dark: #428f54;
+$color-green: #53b369;
+$color-green-light: #75c287;
+
+// Blue
+$color-blue-dark: #0867af;
+$color-blue: #0a81db;
+$color-blue-light: #3b9ae2;
+
+// Purple
+$color-purple-dark: #6a5093;
+$color-purple: #8464b8;
+$color-purple-light: #9d83c6;
+
+// Red
+$color-red-dark: #dc280a ;
+$color-red: #F73415 ;
+$color-red-light: #fa5028 ;
+
+// Orange
+$color-orange-dark: #fa610b ;
+$color-orange: #FB7A31 ;
+$color-orange-light: #fb8c4c ;
+
+// black
+$color-dark-dark: #222;
+$color-dark: #333;
+$color-dark-light: #444;

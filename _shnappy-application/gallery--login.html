@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="svg">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Shnappy clients</title>
+  <link rel="stylesheet" type="text/css" href="scss/style.css" />
+  <link rel="import" href="_partial--upgrade-modal.html">
+
+  <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="layout">
+
+
+
+<!-- modal -->
+<div class="layout__modal js-partial-modal"></div>
+<script>
+  var link = document.querySelector('link[rel="import"]');
+  // Clone the <template> in the import.
+  var template = link.import.querySelector('.js-partial-upgrade');
+  var clone = document.importNode(template.content, true);
+  document.querySelector('.js-partial-modal').appendChild(clone);
+</script>
+
+
+
+
+<!-- layout__header -->
+<div class="layout__header">
+  <div class="center center--1120">
+
+    <div class="header-layout">
+      <div class="header-layout__logo">
+        <a class="header-logo header-logo--active" href="studio--clients.html">Shnappy</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- layout__navigation -->
+<div class="layout__navigation">
+  <div class="center center--1120">
+
+    <div class="primary-wrap">
+
+      <!-- heading -->
+      <div class="primary-heading">
+        <h1 class="primary-heading__studio-name">
+          Gallery Name
+        </h1>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- layout__container -->
+<div class="layout__container layout__container--padding">
+
+
+  <div class="center center--540">
+    <div class="module module--white">
+      <header class="module__header">
+        <h4 class="heading-style">Password required</h4>
+      </header>
+
+
+      <div class="module__body module__body--margin">
+        <form class="form-style">
+
+          <!-- Gallery password -->
+          <div class="form-brick form-brick--margin">
+            <label class="form-brick__label">Gallery password</label>
+            <div class="form-brick__password">
+              <input type="password" class="input-style input-style--password" placeholder="Password">
+              <div class="form-brick__password-button">Show</div>
+            </div>
+            <div class="form-brick__validation">
+              This is an error message, get the fuck out.
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+
+      <footer class="module__footer">
+        <div class="button-pattern button-pattern--cancel-submit clearfix">
+          <div class="button-pattern__cancel">
+            <a class="button button--grey-stroke button--40" href="studio--clients.html">Request access</a>
+          </div>
+          <div class="button-pattern__submit">
+            <a class="button button--green button--40 button--disabled">Submit</a>
+            <a class="button button--green button--40" href="gallery--albums.html">Submit</a>
+            <a class="button button--green button--40 button--disabled">
+              <div class="button__icon">
+                <div class="aperture aperture--24 aperture--white">
+                  <div class="aperture__ring"></div>
+                  <div class="aperture__icon"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+<!-- layout__footer -->
+<div class="layout__footer">
+  <div class="center center--1120">
+    <div class="shnappy-footer">
+      <div class="shnappy-footer__shnappy">Shnappy 2016 &copy;</div>
+      <div class="shnappy-footer__name">Created by Kyle Henwood</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

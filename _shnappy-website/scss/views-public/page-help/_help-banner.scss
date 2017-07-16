@@ -1,0 +1,48 @@
+//---------------
+// Banner Headings
+//---------------
+
+// Home Banner
+.help-banner {
+  width: 560px;
+  max-width: 100%;
+  padding: 64px 0;
+  margin: 0 auto 24px;
+  @include screen-med {
+    display: block;
+    padding: 40px 0;
+  }
+  @include screen-mob {
+    padding: 24px 0;
+  }
+}
+
+.help-banner__headline {
+  margin: 0 0 24px;
+}
+.help-banner__search {}
+
+
+
+.help-search {
+  position: relative;
+}
+.help-search__input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  outline: none;
+  font-size: 16px;
+  font-family: $font-family;
+  padding: 0 152px 0 32px;
+}
+.help-search__button {
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  right: 2px;
+  width: 120px;
+  height: 36px;
+}

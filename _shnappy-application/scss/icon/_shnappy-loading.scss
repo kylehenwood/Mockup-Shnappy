@@ -1,0 +1,150 @@
+$steps: 24;
+$shutter-speed: .8s;
+
+// size variants
+//--24
+.aperture--24 {
+  width: 24px;
+  height: 24px;
+  animation: aperture-rotate $shutter-speed*2 ease-in-out infinite forwards;
+  .aperture__ring,
+  .aperture__icon {
+    width: 24px;
+    height: 24px;
+    border-width: 2px;
+  }
+  .aperture__icon {
+    background-size: auto 24px;
+    animation: aperture-animation-24 $shutter-speed steps($steps, end) infinite alternate;
+  }
+}
+//--48
+.aperture--48 {
+  width: 48px;
+  height: 48px;
+  .aperture__ring,
+  .aperture__icon {
+    width: 48px;
+    height: 48px;
+    border-width: 4px;
+  }
+  .aperture__icon {
+    background-size: auto 48px;
+    animation: aperture-animation-48 $shutter-speed steps($steps, end) infinite alternate;
+  }
+}
+
+//--96
+.aperture--96 {
+  width: 96px;
+  height: 96px;
+  .aperture__ring,
+  .aperture__icon {
+    width: 96px;
+    height: 96px;
+    border-width: 8px;
+  }
+  .aperture__icon {
+    background-size: auto 96px;
+    animation: aperture-animation-96 $shutter-speed steps($steps, end) infinite alternate;
+  }
+}
+
+
+// color variants
+//--white
+.aperture--white {
+  .aperture__ring {
+    border-color: white;
+  }
+  .aperture__icon {
+    background-image: url('../images/aperture_02-white-reflected.png');
+  }
+}
+html.svg .aperture--white.aperture__icon {
+  background-image: url('../images/aperture_02-white-eflected.svg');
+}
+
+
+//--pink
+.aperture--pink {
+  .aperture__ring {
+    border-color: $color-pink;
+  }
+  .aperture__icon {
+    background-image: url('../images/aperture_02-reflected.png');
+  }
+}
+html.svg .aperture--pink.aperture__icon {
+  background-image: url('../images/aperture_02-reflected.svg');
+}
+
+
+
+// Structure
+.aperture {
+  margin: 0 auto;
+  position: relative;
+}
+
+.aperture__ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border-style: solid;
+}
+.aperture__icon {
+  background-repeat: no-repeat;
+}
+
+
+//-- animation
+@keyframes aperture-animation-24 {
+  000% {
+    background-position: 0 0;
+    //transform: rotate(0deg);
+  }
+
+  100% {
+    background-position: -24px*$steps 0;
+    //transform: rotate(30deg);
+  }
+}
+
+@keyframes aperture-rotate {
+  000% {
+    transform: rotate(0deg);
+  }
+  050% {
+    transform: rotate(030deg);
+  }
+  100% {
+    transform: rotate(240deg);
+  }
+}
+
+
+@keyframes aperture-animation-48 {
+  000% {
+    background-position: 0 0;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    background-position: -48px*$steps 0;
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes aperture-animation-96 {
+  000% {
+    background-position: 0 0;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    background-position: -96px*$steps 0;
+    transform: rotate(30deg);
+  }
+}

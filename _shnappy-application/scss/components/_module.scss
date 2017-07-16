@@ -1,0 +1,50 @@
+// module
+.module {
+  position: relative;
+}
+.module--sidebar {
+  padding-left: 232px!important;
+}
+.module--margin {
+  margin: 0 0 16px;
+}
+.module--white {
+  border-radius: 4px;
+  padding: 16px 32px 32px;
+  background: white;
+  box-shadow: $shadow-box;
+}
+.module--white-even {
+  border-radius: 4px;
+  padding: 16px 32px;
+  background: white;
+  box-shadow: $shadow-box;
+}
+
+// module__children
+.module__header {
+  margin: 0 0 24px;
+  padding: 0 0 4px;
+  border-bottom: 1px solid $color-border-light;
+}
+
+.module__controls {
+  padding: 0 0 24px;
+}
+
+.heading-style {
+  color: $text-black;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 4px 0;
+  @include font-size(1.6)
+}
+
+
+.module__body {}
+.module__body--margin {
+  margin: 0 0 24px;
+}
+.module__footer {
+  padding: 24px 0 0;
+}

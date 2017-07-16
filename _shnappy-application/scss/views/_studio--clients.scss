@@ -1,0 +1,187 @@
+// clients markup
+
+
+
+// clients control
+.client-controls {
+  position: relative;
+  padding: 0 200px 0 0;
+}
+.client-controls__search {
+  max-width: 480px;
+}
+.client-controls__button {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+
+
+// client grid
+.client-grid {
+  margin: -8px;
+}
+.client-grid__item {
+  float: left;
+  width: 25%;
+  padding: 8px;
+  @include screen-med {
+    width: 50%;
+  }
+  @include screen-mob {
+    width: 100%;
+  }
+}
+
+
+
+
+// client panel
+.client-panel {
+  cursor: pointer;
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+// client panel children
+.client-panel__alert {
+  position: absolute;
+  z-index: 2;
+  top: -6px;
+  right: -6px;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+  background: $color-background;
+  border-radius: 50%;
+}
+
+.client-alert {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $color-grey;
+}
+
+.client-alert--pink {
+  background: $color-pink;
+  animation: alert-pulse--pink 1.6s linear infinite forwards;
+}
+.client-panel--blue {
+  background: $color-blue;
+}
+.client-panel--green {
+  background: $color-green;
+}
+
+
+// loading state
+.client-panel__loading {
+  height: 100%;
+  padding: 140px 0;
+  //background: $color-grey;
+  background: $color-grey-light;
+  border-radius: 4px;
+}
+
+@-webkit-keyframes alert-pulse--pink {
+  000% {
+    box-shadow: 0 0 0 0 rgba($color-pink,0.6),0 0 0 0 rgba($color-pink,0.6);
+  }
+  033% {
+    box-shadow: 0 0 0 6px rgba($color-pink,0.3),0 0 0 0 rgba($color-pink,0.6);
+  }
+  066% {
+    box-shadow: 0 0 0 12px rgba($color-pink,0),0 0 0 6px rgba($color-pink,0.3);
+  }
+  099% {
+    box-shadow: 0 0 0 0 rgba($color-pink,0),0 0 0 12px rgba($color-pink,0);
+  }
+}
+
+
+
+
+
+// panel
+.client-panel__item {
+  @include noselect();
+  position: relative;
+  height: 100%;
+}
+
+.client-item {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid $color-grey-dark;
+  height: 100%;
+  padding: 24px;
+  background: $color-grey;
+  color: $text-white;
+  //box-shadow: $shadow-box;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  &:hover {
+    box-shadow: $shadow-hover;
+  }
+  &:active {
+    box-shadow: $shadow-active;
+    border-color: $color-pink;
+  }
+}
+
+.client-item__name {
+  padding: 12px 16px;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  border-top: none;
+}
+
+.client-item__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+// client name
+.client-name {
+  display: block;
+  color: $text-black;
+}
+
+.client-name__name {
+  text-align: center;
+  font-family: $font-family-heading;
+  line-height: 28px;
+  @include font-size(1.6);
+}
+
+.client-name__rule {
+  background: $color-border;
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.client-name__date {
+  text-align: center;
+  line-height: 28px;
+  font-family: $font-family;
+  @include font-size(1.4);
+}

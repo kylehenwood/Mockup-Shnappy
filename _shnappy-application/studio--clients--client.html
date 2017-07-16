@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="svg">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Shnappy client</title>
+  <link rel="stylesheet" type="text/css" href="scss/style.css" />
+  <link rel="import" href="_partial--upgrade-modal.html">
+
+  <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="layout">
+
+
+
+<!-- modal -->
+<div class="layout__modal js-partial-modal"></div>
+<script>
+  var link = document.querySelector('link[rel="import"]');
+  // Clone the <template> in the import.
+  var template = link.import.querySelector('.js-partial-upgrade');
+  var clone = document.importNode(template.content, true);
+  document.querySelector('.js-partial-modal').appendChild(clone);
+</script>
+
+
+
+
+<!-- layout__header -->
+<div class="layout__header">
+  <div class="center center--1120">
+
+    <div class="header-layout">
+      <div class="header-layout__logo">
+        <a class="header-logo header-logo--active" href="studio--clients.html">Shnappy</a>
+      </div>
+
+      <div class="header-layout__user js-user-dropdown">
+
+        <a class="user-button js-user-dropdown-trigger">
+          <div class="user-button__name">Kyle Henwood</div>
+          <div class="user-button__icon">
+            <span class="flat-icon icon--24 icon--dropdown-arrow"></span>
+          </div>
+        </a>
+
+        <div class="user-dropdown js-user-dropdown-content">
+
+          <div class="user-dropdown__profile">
+            <div class="user-dropdown__avatar"></div>
+            <div class="user-dropdown__username">Kyle Henwood</div>
+            <div class="user-dropdown__email">kyle.henwood@gmail.com</div>
+            <div class="user-dropdown__button">
+              <a class="button button--32 button--pink-stroke" href="account--profile.html">Edit profile</a>
+            </div>
+          </div>
+
+          <div class="user-dropdown__section">
+            <a class="user-dropdown__item" href="account--notifications.html">Notifications</a>
+            <a class="user-dropdown__item" href="account--storage.html">Linked storage</a>
+            <a class="user-dropdown__item" href="account--billing.html">Billing / Usage</a>
+            <a class="user-dropdown__item" href="account--sign-out.html">Sign out</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="header-layout__account js-modal-trigger">
+        Upgrade now!
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- layout__navigation -->
+<div class="layout__navigation">
+  <div class="center center--1120">
+
+    <div class="primary-wrap">
+
+      <!-- heading -->
+      <div class="primary-heading">
+        <h1 class="primary-heading__studio-name">
+          StudioName Studio
+        </h1>
+      </div>
+
+      <!-- navigation -->
+      <ul class="primary clearfix">
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem primary-item--active" href="studio--clients.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Clients</div>
+            </div>
+          </a>
+        </li>
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="studio--activity.html">
+            <div class="primary-item__container">
+              <div class="primary-item__alert">
+                <div class="client-alert client-alert--pink"></div>
+              </div>
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Activity</div>
+            </div>
+          </a>
+        </li>
+
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="studio--contacts.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Contacts</div>
+            </div>
+          </a>
+        </li>
+
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="studio--studio.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Studio</div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- layout__container -->
+<div class="layout__container">
+  <div class="center center--1120">
+
+    <!-- clients grid -->
+    <div class="module module--margin">
+      <div class="module__header">
+        <ul class="breadcrumb clearfix">
+          <li class="breadcrumb__item">
+            <div class="breadcrumb-item">
+              <a class="breadcrumb-item__link" href="studio--clients.html">
+                Clients
+              </a>
+            </div>
+          </li>
+          <li class="breadcrumb__item">
+            <div class="breadcrumb-item breadcrumb-item--icon">
+              <div class="breadcrumb-item__icon">
+                <span class="flat-icon icon--24 icon--arrow-right"></span>
+              </div>
+              <a class="breadcrumb-item__text">
+                ClientName
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="module__body">
+
+
+        <div class="module module--white-even module--margin">
+          <div class="client-banner">
+            <div class="client-banner__client-name">Client Name</div>
+            <div class="client-banner__stats">
+              <div class="client-banner__stats-stat"></div>
+              <div class="client-banner__stats-stat"></div>
+              <div class="client-banner__stats-stat"></div>
+            </div>
+            <div class="client-banner__view-gallery">
+              <a class="button button--40 button--pink" href="gallery--login.html">Open gallery in new tab</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="module-sidebar clearfix">
+          <div class="module-sidebar__sidebar">
+
+            <a class="module-sidebar__button module-sidebar__button--active" href="studio--studio.html">
+              <span class="module-sidebar__button-line"></span>
+              <span class="module-sidebar__button-icon"></span>
+              <span class="module-sidebar__button-text">Gallery statistics</span>
+            </a>
+
+            <a class="module-sidebar__button"  href="studio--studio--defaults.html">
+              <span class="module-sidebar__button-line"></span>
+              <span class="module-sidebar__button-icon"></span>
+              <span class="module-sidebar__button-text">Gallery activity</span>
+            </a>
+
+            <a class="module-sidebar__button" href="studio--studio--watermark.html">
+              <span class="module-sidebar__button-line"></span>
+              <span class="module-sidebar__button-icon"></span>
+              <span class="module-sidebar__button-text">Gallery settings</span>
+            </a>
+
+            <a class="module-sidebar__button" href="studio--studio--website.html">
+              <span class="module-sidebar__button-line"></span>
+              <span class="module-sidebar__button-icon"></span>
+              <span class="module-sidebar__button-text">Gallery style</span>
+            </a>
+
+            <a class="module-sidebar__button" href="studio--studio--website.html">
+              <span class="module-sidebar__button-line"></span>
+              <span class="module-sidebar__button-icon"></span>
+              <span class="module-sidebar__button-text">Share gallery</span>
+            </a>
+
+            <a class="module-sidebar__button" href="studio--studio--website.html">
+              <span class="module-sidebar__button-line"></span>
+              <span class="module-sidebar__button-icon"></span>
+              <span class="module-sidebar__button-text">Purchase controls</span>
+            </a>
+
+
+          </div>
+          <div class="module-sidebar__content">
+
+            <div class="module">
+              <div class="module__header">
+                <h4 class="heading-style">Client information</h4>
+              </div>
+
+
+              <div class="module__body">
+
+                <div class="typography">
+
+                  <h1>HTML Ipsum Presents</h1>
+
+                  <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+                  <h2>Header Level 2</h2>
+
+                  <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                  </ol>
+
+                  <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+                  <h3>Header Level 3</h3>
+
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                  </ul>
+
+<pre><code>
+  #header h1 a {
+  display: block;
+  width: 300px;
+  height: 80px;
+  }
+</code></pre>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+</div>
+
+
+
+<!-- layout__footer -->
+<div class="layout__footer">
+  <div class="center center--1120">
+    <div class="shnappy-footer">
+      <div class="shnappy-footer__shnappy">Shnappy 2016 &copy;</div>
+      <div class="shnappy-footer__name">Created by Kyle Henwood</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

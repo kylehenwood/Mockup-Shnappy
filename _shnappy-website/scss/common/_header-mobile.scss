@@ -1,0 +1,125 @@
+// Mobile Header
+.header-mobile {
+  width: 100%;
+  display: none;
+  position: relative;
+  padding-top: 56px;
+  @include screen-med() {
+    display: block;
+  }
+}
+.header-mobile__logo {
+  padding: 8px 0 8px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-mobile__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 24px 8px 0;
+}
+
+.header-mobile__navigation {
+  display: none;
+  background: white;
+  padding: 16px 24px;
+}
+.header-mobile__navigation--visible {
+  display: block;
+}
+
+
+.menu-button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: 2px solid rgba(white,0.6);
+}
+.menu-button--open {
+  background: $color-pink-700;
+}
+
+
+
+.mobile-navigation {
+  animation: mobile-navigation-animation 160ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mobile-navigation-animation {
+  000% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.mobile-navigation__item {
+  display: block;
+  padding: 8px 24px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+
+  &:hover,
+  &:active {
+    color: white;
+    background: $color-pink-600;
+  }
+}
+.mobile-navigation__item--active {
+  position: relative;
+  //background: $color-grey-300;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: -6px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: $color-pink-600;
+  }
+}
+
+
+.mobile-navigation__client {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid $color-grey-300;
+}
+
+
+
+// client block
+.mobile-not-logged-in {
+  padding: 12px 0;
+}
+.mobile-not-logged-in__or {
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+  line-height: 16px;
+  font-size: 14px;
+  font-style: italic;
+  color: $color-grey-500;
+}
+
+// tbc
+.mobile-logged-in {}

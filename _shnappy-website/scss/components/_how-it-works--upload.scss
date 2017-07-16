@@ -1,0 +1,46 @@
+
+// SVG share and communicate
+// Share timeline:
+// length: 5s
+
+$anim-upload-duration: 5s;
+
+
+.svg-upload--animate {
+  //.svg-upload:hover {
+
+}
+
+.svg-upload__photo-1,
+.svg-upload__photo-2,
+.svg-upload__photo-3 {
+  animation: anim-upload-photo linear $anim-share-duration infinite;
+  //animation-delay: -4s;
+  transform-origin: center;
+}
+
+.svg-upload__photo-1 {
+  animation-delay: -2s;
+}
+.svg-upload__photo-2 {
+  animation-delay: -3s;
+}
+.svg-upload__photo-3 {
+  animation-delay: -1s;
+}
+
+
+
+// Upload animation animations.
+
+
+//star
+@keyframes anim-upload-photo{
+  000% {
+    transform: translateY(60px);
+  }
+  60%,
+  100% {
+    transform: translateY(-60px);
+  }
+}

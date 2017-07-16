@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="svg">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Account notifications</title>
+  <link rel="stylesheet" type="text/css" href="scss/style.css" />
+  <link rel="import" href="_partial--upgrade-modal.html">
+  <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="layout">
+
+
+<!-- modal -->
+<div class="layout__modal js-partial-modal"></div>
+<script>
+  var link = document.querySelector('link[rel="import"]');
+  // Clone the <template> in the import.
+  var template = link.import.querySelector('.js-partial-upgrade');
+  var clone = document.importNode(template.content, true);
+  document.querySelector('.js-partial-modal').appendChild(clone);
+</script>
+
+<!-- layout__header -->
+<div class="layout__header">
+  <div class="center center--1120">
+
+    <div class="header-layout">
+      <div class="header-layout__logo">
+        <a class="back-to-studio" href="studio--clients.html">
+          <div class="back-to-studio__icon">
+            <span class="icon--test-white"></span>
+          </div>
+          <div class="back-to-studio__text">Back to studio</div>
+        </a>
+      </div>
+
+      <div class="header-layout__user  js-user-dropdown">
+
+        <a class="user-button js-user-dropdown-trigger">
+          <div class="user-button__name">Kyle Henwood</div>
+          <div class="user-button__icon">
+            <span class="flat-icon icon--24 icon--dropdown-arrow"></span>
+          </div>
+        </a>
+
+        <div class="user-dropdown js-user-dropdown-content">
+
+          <div class="user-dropdown__profile">
+            <div class="user-dropdown__avatar"></div>
+            <div class="user-dropdown__username">Kyle Henwood</div>
+            <div class="user-dropdown__email">kyle.henwood@gmail.com</div>
+            <div class="user-dropdown__button">
+              <a class="button button--32 button--pink-stroke" href="account--profile.html">Edit profile</a>
+            </div>
+          </div>
+
+          <div class="user-dropdown__section">
+            <a class="user-dropdown__item" href="account--notifications.html">Notifications</a>
+            <a class="user-dropdown__item" href="account--storage.html">Linked storage</a>
+            <a class="user-dropdown__item" href="account--billing.html">Billing / Usage</a>
+            <a class="user-dropdown__item" href="account--sign-out.html">Sign out</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="header-layout__account js-modal-trigger">
+        Upgrade now!
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- layout__navigation -->
+<div class="layout__navigation">
+  <div class="center center--1120">
+
+    <div class="primary-wrap">
+
+      <!-- heading -->
+      <div class="primary-heading">
+        <h1 class="primary-heading__studio-name">
+          Kyle Henwood
+        </h1>
+      </div>
+
+      <!-- navigation -->
+      <ul class="primary clearfix">
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="account--profile.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Profile</div>
+            </div>
+          </a>
+        </li>
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem primary-item--active" href="account--notifications.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Notifications</div>
+            </div>
+          </a>
+        </li>
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="account--storage.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Linked storage</div>
+            </div>
+          </a>
+        </li>
+
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="account--billing.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Billing</div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- layout__container -->
+<div class="layout__container">
+
+  <div class="center center--1120">
+    <div class="module module--white">
+
+      <header class="module__header">
+        <h2 class="heading-style">Notifications</h2>
+      </header>
+
+      <div class="module__body module__body--margin">
+        <div class="typography">
+          <h4>NOTE:</h4>
+          <p>These notification options are for your account, to change notification options for your studio, visit your <a href="studio--studio.html">Studio notifications</a> page.</p>
+        </div>
+      </div>
+
+      <div class="module__body">
+        <ul class="switch-list">
+          <li class="switch-list__item">
+            <div class="switch-control">
+              <div class="switch-control__title">Shnappy news</div>
+              <div class="switch-control__message">
+                <div class="typography">
+                  <p>News to keep you upto date with all things Shnappy! New features.</p>
+                </div>
+              </div>
+              <div class="switch-control__switch">
+                <label class="switch">
+                  <input class="switch__input" type="checkbox">
+                  <div class="switch__toggle"></div>
+                </label>
+              </div>
+            </div>
+          </li>
+
+          <li class="switch-list__item">
+            <div class="switch-control">
+              <div class="switch-control__title">Activity emails</div>
+              <div class="switch-control__message">
+                <div class="typography">
+                  <p>Stay upto date with all your clients activity.</p>
+                </div>
+              </div>
+              <div class="switch-control__switch">
+                <label class="switch">
+                  <input class="switch__input" type="checkbox">
+                  <div class="switch__toggle"></div>
+                </label>
+              </div>
+            </div>
+          </li>
+
+          <li class="switch-list__item">
+            <div class="switch-control">
+              <div class="switch-control__title">Changes made to my account</div>
+              <div class="switch-control__message">
+                <div class="typography">
+                  <p>Email me whenever I make changes to my account.</p>
+                </div>
+              </div>
+              <div class="switch-control__switch">
+                <label class="switch">
+                  <input class="switch__input" type="checkbox">
+                  <div class="switch__toggle"></div>
+                </label>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <footer class="module__footer">
+
+        <div class="button-pattern clearfix">
+          <div class="button-pattern__submit">
+            <button class="button button--36 button--pink button--disabled" title="You haven't made any changes!">Save changes</button>
+            <button class="button button--36 button--pink">Save changes</button>
+          </div>
+        </div>
+
+
+      </footer>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- layout__footer -->
+<div class="layout__footer">
+  <div class="center center--1120">
+    <div class="shnappy-footer clearfix">
+      <div class="shnappy-footer__shnappy">Shnappy 2016 &copy;</div>
+      <div class="shnappy-footer__name">Created by Kyle Henwood</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

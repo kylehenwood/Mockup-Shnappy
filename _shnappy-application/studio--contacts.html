@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="svg">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Shnappy contacts</title>
+  <link rel="stylesheet" type="text/css" href="scss/style.css" />
+  <link rel="import" href="_partial--upgrade-modal.html">
+
+  <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="layout">
+
+
+
+<!-- modal -->
+<div class="layout__modal js-partial-modal"></div>
+<script>
+  var link = document.querySelector('link[rel="import"]');
+  // Clone the <template> in the import.
+  var template = link.import.querySelector('.js-partial-upgrade');
+  var clone = document.importNode(template.content, true);
+  document.querySelector('.js-partial-modal').appendChild(clone);
+</script>
+
+
+
+
+<!-- layout__header -->
+<div class="layout__header">
+  <div class="center center--1120">
+
+    <div class="header-layout">
+      <div class="header-layout__logo">
+        <a class="header-logo header-logo--active" href="studio--clients.html">Shnappy</a>
+      </div>
+
+      <div class="header-layout__user js-user-dropdown">
+
+        <a class="user-button js-user-dropdown-trigger">
+          <div class="user-button__name">Kyle Henwood</div>
+          <div class="user-button__icon">
+            <span class="flat-icon icon--24 icon--dropdown-arrow"></span>
+          </div>
+        </a>
+
+        <div class="user-dropdown js-user-dropdown-content">
+
+          <div class="user-dropdown__profile">
+            <div class="user-dropdown__avatar"></div>
+            <div class="user-dropdown__username">Kyle Henwood</div>
+            <div class="user-dropdown__email">kyle.henwood@gmail.com</div>
+            <div class="user-dropdown__button">
+              <a class="button button--32 button--pink-stroke" href="account--profile.html">Edit profile</a>
+            </div>
+          </div>
+
+          <div class="user-dropdown__section">
+            <a class="user-dropdown__item" href="account--notifications.html">Notifications</a>
+            <a class="user-dropdown__item" href="account--storage.html">Linked storage</a>
+            <a class="user-dropdown__item" href="account--billing.html">Billing / Usage</a>
+            <a class="user-dropdown__item" href="account--sign-out.html">Sign out</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="header-layout__account js-modal-trigger">
+        Upgrade now!
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- layout__navigation -->
+<div class="layout__navigation">
+  <div class="center center--1120">
+
+    <div class="primary-wrap">
+
+      <!-- heading -->
+      <div class="primary-heading">
+        <h1 class="primary-heading__studio-name">
+          StudioName Studio
+        </h1>
+      </div>
+
+      <!-- navigation -->
+      <ul class="primary clearfix">
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="studio--clients.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Clients</div>
+            </div>
+          </a>
+        </li>
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="studio--activity.html">
+            <div class="primary-item__container">
+              <div class="primary-item__alert">
+                <div class="client-alert client-alert--pink"></div>
+              </div>
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Activity</div>
+            </div>
+          </a>
+        </li>
+
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem primary-item--active" href="studio--contacts.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Contacts</div>
+            </div>
+          </a>
+        </li>
+
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="studio--studio.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Studio</div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- layout__container -->
+<div class="layout__container">
+  <div class="center center--1120">
+
+    <!-- clients grid -->
+    <div class="module module--margin">
+      <div class="module__header">
+        <h4 class="heading-style">Contacts</h4>
+      </div>
+
+
+      <div class="module__body">
+
+
+        <div class="module module--white">
+          <div class="module__controls">
+            <div class="contact-controls">
+              <div class="contact-controls__search">
+
+                <div class="search-input">
+                  <div class="search-input__icon">
+                    <span class="flat-icon icon--24 icon--microscope"></span>
+                  </div>
+                  <input class="search-input__input input-style" placeholder="search contacts...">
+                </div>
+
+
+              </div>
+              <div class="contact-controls__button">
+                <a class="button button--pink button--40" href="studio--contacts--add.html">
+                  <div class="button-inner button-inner--icon-after">
+                    <div class="button-inner__text">Add contact</div>
+                    <div class="button-inner__icon-after">
+                      <div class="icon--test-white"></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="module__body">
+
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>        <li class="contacts-list__item">
+              <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                <div class="contact-item__avatar"></div>
+                <div class="contact-item__name">ContactName</div>
+                <div class="contact-item__email">contactName@email.com</div>
+              </a>
+            </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contact-item clearfix" href="studio--contacts--contact.html">
+                  <div class="contact-item__avatar"></div>
+                  <div class="contact-item__name">ContactName</div>
+                  <div class="contact-item__email">contactName@email.com</div>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+
+
+
+    </div>
+  </div>
+
+    <div class="module module--margin">
+      <div class="module__body">
+        <div class="typography">
+          <h1>You have no contacts yet!</h1>
+        </div>
+      </div>
+      <footer class="module__footer">
+        <a class="button button--pink button--40" href="studio--contacts--add.html">Add one now!</a>
+      </footer>
+    </div>
+
+    <div class="module module--margin module--white">
+      <div class="module__header">
+        <h4 class="heading-style">Contacts</h4>
+      </div>
+      <div class="module__body">
+
+        <div class="typography">
+          <p>Contacts added to shnappy, either manually or via Signing up to a gallery.</p>
+          <p>Require details on gallery page, contacts who download stuff or sign up to comment are shown here...</p>
+          <ul>
+            <li>Search contacts.</li>
+            <li>Add contacts.</li>
+            <li>Show activity?</li>
+          </ul>
+          <h4>Contacts page</h4>
+          <li>Viewable galleries by person.</li>
+          <li>Conversations with person.</li>
+          <li>Person details.</li>
+          <li>Person actions.</li>
+        </div>
+
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- layout__footer -->
+<div class="layout__footer">
+  <div class="center center--1120">
+    <div class="shnappy-footer">
+      <div class="shnappy-footer__shnappy">Shnappy 2016 &copy;</div>
+      <div class="shnappy-footer__name">Created by Kyle Henwood</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

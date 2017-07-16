@@ -1,0 +1,38 @@
+// switch container
+
+// switch list
+.switch-list {
+  border-top: 1px solid $color-border-light;
+}
+.switch-list__item {
+  border-bottom: 1px solid $color-border-light;
+}
+
+// switch control
+.switch-control {
+  display: block;
+  position: relative;
+  padding: 16px 100px 16px 24px;
+  background: $color-grey-lightest;
+}
+.switch-control__switch {
+  position: absolute;
+  right: 24px;
+  top: 16px;
+
+}
+.switch-control__title {
+  @include font-size(1.5);
+  @include nowrap;
+  font-weight: bold;
+  line-height: 24px;
+}
+.switch-control__message {
+  margin: 4px 0 0;
+}
+.switch-control__error {
+  @include font-size(1.2);
+  font-style: italic;
+  color: $text-red;
+  margin: 12px 0 0;
+}

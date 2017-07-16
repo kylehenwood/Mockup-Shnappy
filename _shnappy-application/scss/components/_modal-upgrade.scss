@@ -1,0 +1,155 @@
+//-------------
+// Upgrade modal
+//-------------
+
+.modal-upgrade {
+  padding: 12px 24px;
+}
+
+// content
+.modal-upgrade__headline {
+  @include font-size(3.2);
+  padding: 16px 0;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.modal-upgrade__annual-switch {
+  margin: 0 0 40px;
+}
+
+.annual-switch {
+  height: 40px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.annual-switch__button {
+  @include nowrap;
+  @include noselect;
+  @include font-size(1.4);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: 40px;
+  float: left;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 6px 12px;
+  color: $color-pink;
+  text-align: center;
+  background: white;
+  border: 2px solid $color-pink;
+  &:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+  &:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+  &:hover,
+  &:active {
+    color: $color-pink-dark;
+  }
+  &:hover {
+    box-shadow: $shadow-hover;
+  }
+  &:active {
+    box-shadow: $shadow-active;
+  }
+}
+.annual-switch__button--active {
+  z-index: 0;
+  color:white!important;
+  box-shadow: none!important;
+  background: $color-pink!important;
+}
+
+
+
+// plan select block
+.modal-upgrade__section {
+  padding: 24px 40px;
+}
+.modal-upgrade__title {
+  @include font-size(1.6);
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 0 0 8px;
+  margin: 0 0 12px;
+  border-bottom: 1px solid $color-border-light;
+}
+
+.modal-upgrade__message {
+  @include font-size(1.6);
+  font-style: italic;
+  text-align: center;
+  padding: 12px 24px 24px;
+}
+
+.modal-upgrade__plan {
+  padding: 4px 0;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+
+
+// plan block
+.plan-block {
+  position: relative;
+  border-radius: 3px;
+  border: 2px solid $color-border;
+  padding: 24px 200px 24px 184px;
+  min-height: 72px;
+}
+.plan-block--green {
+  border-color: $color-green;
+  .plan-block__title {
+    background-color: $color-green-light;
+  }
+}
+.plan-block--pink {
+  border-color: $color-pink;
+  .plan-block__title {
+    background-color: $color-pink-light;
+  }
+}
+
+.plan-block__title {
+  @include nowrap;
+  @include font-size(1.6);
+  font-weight: bold;
+  line-height: 36px;
+  position: absolute;
+  padding: 16px 24px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 160px;
+  background: $color-grey-light;
+}
+.plan-block__list {}
+.plan-block__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px 24px;
+  width: 200px;
+}
+
+.plan-block__feature {
+  position: relative;
+  padding: 0 0 0 36px;
+}
+.plan-block__feature-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+.plan-block__feature-text {
+  line-height: 24px;
+}

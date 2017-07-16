@@ -1,0 +1,38 @@
+// client
+
+.client-banner {
+  position: relative;
+  padding: 0 200px;
+  height: 40px;
+}
+.client-banner__client-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  @include font-size(1.8);
+  font-weight: bold;
+}
+.client-banner__stats {
+  width: 300px;
+  margin: 0 auto;
+}
+.client-banner__stats-stat {
+}
+.client-banner__stats-stat {
+  background: $color-grey-light;
+  float: left;
+  width: 80px;
+  height: 40px;
+  margin: 0 6px;
+  border-radius: 4px;
+}
+.client-banner__stats-stat {}
+
+
+.client-banner__view-gallery {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+}

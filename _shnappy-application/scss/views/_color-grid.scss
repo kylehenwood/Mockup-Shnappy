@@ -1,0 +1,119 @@
+.color-container {
+  margin: 0 -8px;
+}
+
+// --
+.color-grid {
+  float: left;
+  width: 20%;
+  padding: 0 8px;
+  @include screen-med {
+    width: 50%;
+  }
+  @include screen-mob {
+    width: 100%;
+  }
+}
+.color-grid__item {
+  position: relative;
+  margin: 0 0 4px;
+  background: white;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid white;
+  box-shadow: $shadow-box;
+  @include transition(all 80ms ease-out);
+  &:hover {
+    z-index: 2;
+    //border-color: $color-yellow;
+    box-shadow: $shadow-hover;
+  }
+  &:active {
+    //border-color: $color-pink;
+    box-shadow: $shadow-hover;
+  }
+}
+
+
+// color brick
+.color-brick {
+  height: 40px;
+  position: relative;
+  padding: 0 0 0 40px;
+}
+.color-brick__icon {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+}
+.color-brick__class {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: $font-mono;
+  content: '';
+  line-height: 40px;
+  padding: 0 8px;
+}
+
+
+//-- color icon
+.icon-color {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+// colors
+@mixin color-brick ($color-name,$dark,$standard,$light) {
+  .bg-color-#{$color-name}-dark {
+    background-color: $dark;
+  }
+  .bg-color-#{$color-name} {
+    background-color: $standard;
+  }
+  .bg-color-#{$color-name}-light {
+    background-color: $light;
+  }
+}
+
+// pink
+@include color-brick(
+    'pink',
+    $color-pink-dark,
+    $color-pink,
+    $color-pink-light);
+
+// pink
+@include color-brick(
+    'yellow',
+    $color-yellow-dark,
+    $color-yellow,
+    $color-yellow-light);
+
+// green
+@include color-brick(
+    'green',
+    $color-green-dark,
+    $color-green,
+    $color-green-light);
+
+// blue
+@include color-brick(
+    'blue',
+    $color-blue-dark,
+    $color-blue,
+    $color-blue-light);
+
+// blue
+@include color-brick(
+    'purple',
+    $color-purple-dark,
+    $color-purple,
+    $color-purple-light);

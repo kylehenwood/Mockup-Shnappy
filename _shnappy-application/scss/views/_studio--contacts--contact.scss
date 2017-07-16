@@ -1,0 +1,24 @@
+// contact view
+
+
+.contact-profile {
+  padding: 32px;
+}
+.contact-profile__avatar {
+  margin: 0 auto 16px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid $text-black;
+}
+.contact-profile__name {
+  @include font-size(1.6);
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  padding: 4px;
+}
+.contact-profile__email {
+  text-align: center;
+  padding: 4px;
+}

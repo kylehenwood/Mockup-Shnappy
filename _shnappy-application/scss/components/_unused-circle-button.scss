@@ -1,0 +1,42 @@
+
+
+// button style...
+.advanced-controls-button__icon {
+  display: block;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  border-radius: 50%;
+  background: white;
+  color: $text-black;
+  border: 2px solid $color-border;
+  &:hover {
+    color: white;
+    border-color: $color-pink;
+    background: $color-pink-light;
+    animation: advanced-pulse 1.6s linear infinite forwards;
+  }
+  &:active {
+    color: white;
+    border-color: $color-pink;
+    background: $color-pink-dark;
+    animation: advanced-pulse 1.6s linear infinite forwards;
+  }
+}
+
+
+@-webkit-keyframes advanced-pulse {
+  000% {
+    box-shadow: 0 0 0 0 rgba($color-pink,0.6),0 0 0 0 rgba($color-pink,0.6);
+  }
+  033% {
+    box-shadow: 0 0 0 6px rgba($color-pink,0.3),0 0 0 0 rgba($color-pink,0.6);
+  }
+  066% {
+    box-shadow: 0 0 0 12px rgba($color-pink,0),0 0 0 6px rgba($color-pink,0.3);
+  }
+  099% {
+    box-shadow: 0 0 0 0 rgba($color-pink,0),0 0 0 12px rgba($color-pink,0);
+  }
+}

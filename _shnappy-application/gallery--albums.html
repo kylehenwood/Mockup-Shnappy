@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="svg">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Shnappy Album</title>
+  <link rel="stylesheet" type="text/css" href="scss/style.css" />
+  <link rel="import" href="_partial--upgrade-modal.html">
+
+  <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="gallery-layout js-gallery-layout">
+
+<div class="gallery-controls">
+  <div id="control-1"></div>
+  <div id="control-2"></div>
+  <div id="control-3"></div>
+  <div id="control-4"></div>
+</div>
+
+
+<!-- gallery-layout -->
+<div class="gallery-layout__cover js-gallery-cover">
+  <div class="gallery-cover">John and Jane's Wedding</div>
+</div>
+<div class="gallery-layout__navigation">
+  <div class="gallery-navigation js-gallery-navigation">
+
+
+    <div class="center center--1120">
+
+      <ul class="gallery-nav clearfix">
+        <li class="gallery-nav__item">
+          <div class="gallery-nav-item gallery-nav-item--active">
+            <div class="gallery-nav-item__text">Albums</div>
+            <div class="gallery-nav-item__underline"></div>
+          </div>
+        </li>
+        <li class="gallery-nav__item">
+          <div class="gallery-nav-item">
+            <div class="gallery-nav-item__text">All photos</div>
+            <div class="gallery-nav-item__underline"></div>
+          </div>
+        </li>
+        <li class="gallery-nav__item">
+          <div class="gallery-nav-item">
+            <div class="gallery-nav-item__text">Favourites</div>
+            <div class="gallery-nav-item__underline"></div>
+          </div>
+        </li>
+        <li class="gallery-nav__item">
+          <div class="gallery-nav-item">
+            <div class="gallery-nav-item__text">Cart</div>
+            <div class="gallery-nav-item__underline"></div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+
+  </div>
+</div>
+<div class="gallery-layout__container">
+
+  <div class="center center--1120">
+
+    <div class="module">
+      <div class="module__header">
+        <ul class="breadcrumb clearfix">
+          <li class="breadcrumb__item">
+
+            <div class="breadcrumb-item">
+              <a class="breadcrumb-item__link" href="#">Albums</a>
+            </div>
+
+          </li>
+
+          <li class="breadcrumb__item">
+
+            <div class="breadcrumb-item breadcrumb-item--icon">
+              <div class="breadcrumb-item__icon">
+                <span class="flat-icon icon--24 icon--arrow-right"></span>
+              </div>
+              <span class="breadcrumb-item__text">AlbumName</span>
+            </div>
+
+          </li>
+
+
+        </ul>
+      </div>
+
+    </div>
+
+
+    <ul class="grid effect-2" id="grid">
+      <li><a class="grid-item"><img src="images/1.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/3.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/4.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/12.png"></a></li>
+      <li><a class="grid-item"><img src="images/1.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/3.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/4.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/12.png"></a></li>
+      <li><a class="grid-item"><img src="images/13.png"></a></li>
+      <li><a class="grid-item"><img src="images/10.png"></a></li>
+      <li><a class="grid-item"><img src="images/9.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/2.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/14.png"></a></li>
+      <li><a class="grid-item"><img src="images/5.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/6.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/7.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/8.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/9.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/12.png"></a></li>
+      <li><a class="grid-item"><img src="images/1.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/1.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/3.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/4.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/12.png"></a></li>
+      <li><a class="grid-item"><img src="images/13.png"></a></li>
+      <li><a class="grid-item"><img src="images/10.png"></a></li>
+      <li><a class="grid-item"><img src="images/9.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/2.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/14.png"></a></li>
+      <li><a class="grid-item"><img src="images/5.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/6.jpg"></a></li>
+      <li><a class="grid-item"><img src="images/7.jpg"></a></li>
+    </ul>
+
+  </div>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/imagesloaded.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/AnimOnScroll.js"></script>
+  <script>
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+      minDuration : 0.4,
+      maxDuration : 0.4,
+      viewportFactor : 0.2
+    } );
+  </script>
+</div>
+
+
+<!-- gallery footer -->
+<div class="gallery-layout__footer">
+  <div class="center center--1120">
+    <div class="shnappy-footer">
+      <div class="shnappy-footer__shnappy">Shnappy 2016 &copy;</div>
+      <div class="shnappy-footer__name">Created by Kyle Henwood</div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

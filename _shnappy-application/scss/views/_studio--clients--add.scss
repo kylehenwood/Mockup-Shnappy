@@ -1,0 +1,57 @@
+//-------------------
+// Add clients screen
+//-------------------
+
+
+.advanced-controls {}
+.advanced-controls--open {}
+
+.advanced-controls__visible {
+  position: relative;
+}
+
+.advanced-controls__button {
+  background: white;
+  padding: 0 2px;
+  position: relative;
+  z-index: 1;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.advanced-controls__line {
+  display: block;
+  position: absolute;
+  top: 13px;
+  width: 100%;
+  border-top: 2px solid $color-border-light;
+}
+
+
+.advanced-controls__content {
+  position: relative;
+  padding: 24px 0 0;
+  display: none;
+  overflow: hidden;
+}
+.advanced-controls__content--open {
+  display: block;
+  opacity: 0;
+  animation: advanced-show 400ms ease-out normal forwards;
+}
+
+//!todo css animations fallback
+
+@-webkit-keyframes advanced-show {
+  000% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.advanced-controls__content-container {
+  margin: 0 0 24px;
+}

@@ -1,0 +1,17 @@
+//---------------
+// Features Banner
+//---------------
+
+.features-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0;
+  @include screen-med {
+    display: block;
+    padding: 40px 0;
+  }
+  @include screen-mob {
+    padding: 24px 0;
+  }
+}

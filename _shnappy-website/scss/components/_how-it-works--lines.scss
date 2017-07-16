@@ -1,0 +1,91 @@
+
+// SVG share and communicate
+// Share timeline:
+// length: 5s
+
+$line-anim-duration: 10s;
+
+.svg-lines {
+  transform: scale(1);
+  &:hover {
+    .svg-lines__line-1,
+    .svg-lines__line-1-b {
+      animation: anim-lines-1 linear 2s infinite;
+    }
+    .svg-lines__line-2,
+    .svg-lines__line-2-b {
+      animation: anim-lines-2 linear 1.5s infinite;
+    }
+    .svg-lines__line-3,
+    .svg-lines__line-3-b {
+      animation: anim-lines-3 linear 2s infinite;
+    }
+  }
+}
+
+// line-1
+.svg-lines__line-1,
+.svg-lines__line-1-b{
+  stroke-dasharray: 6 50;  // 8 is length of line, 200 is length of space
+  stroke-dashoffset: 2;   // moving dash down the line
+  stroke-linejoin: round;
+  //animation: anim-lines-1 linear 2s infinite;
+}
+.svg-lines__line-1-b {
+  animation-delay: -1s;
+}
+
+@keyframes anim-lines-1 {
+  000% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: -24;
+  }
+}
+
+
+
+// line-2
+.svg-lines__line-2,
+.svg-lines__line-2-b {
+  stroke-dasharray: 10 50;  // 8 is length of line, 200 is length of space
+  stroke-dashoffset: 0;   // moving dash down the line
+  stroke-linejoin: round;
+  //animation: anim-lines-2 linear 1.5s infinite;
+}
+.svg-lines__line-2-b {
+  animation-delay: -0.75s;
+}
+
+@keyframes anim-lines-2 {
+  000% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: -24;
+  }
+}
+
+
+
+// line-3
+.svg-lines__line-3,
+.svg-lines__line-3-b {
+  stroke-dasharray: 4 4 0 50;
+  stroke-dashoffset: 0;
+  stroke-linejoin: round;
+  //animation: anim-lines-3 linear 2s infinite;
+}
+.svg-lines__line-3-b {
+  animation-delay: -1s;
+}
+
+@keyframes anim-lines-3 {
+  000% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: -24;
+  }
+}

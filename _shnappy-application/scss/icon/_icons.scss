@@ -1,0 +1,93 @@
+// Icons
+// Using the flaticons stroke icon set
+@font-face {
+  font-family: 'Flaticons Stroke';
+  src: url('../fonts/flaticons-stroke/flaticons-stroke.eot');
+  src: url('../fonts/flaticons-stroke/flaticons-stroke.eot?#iefix') format("embedded-opentype"),
+       url('../fonts/flaticons-stroke/flaticons-stroke.woff') format('woff'),
+       url('../fonts/flaticons-stroke/flaticons-stroke.ttf') format('truetype'),
+       url('../fonts/flaticons-stroke/flaticons-stroke.svg#flaticons-stroke') format('svg');
+}
+
+@font-face {
+  font-family: 'Flaticons Social';
+  src: url('../fonts/flaticons-social/flaticons-social.eot');
+  src: url('../fonts/flaticons-social/flaticons-social.eot?#iefix') format("embedded-opentype"),
+  url('../fonts/flaticons-social/flaticons-social.woff') format('woff'),
+  url('../fonts/flaticons-social/flaticons-social.ttf') format('truetype'),
+  url('../fonts/flaticons-social/flaticons-social.svg#flaticons-social') format('svg');
+}
+
+.social-icon:before {
+  font-family: 'Flaticons Social';
+}
+
+.flat-icon:before {
+  font-family: 'Flaticons Stroke';
+}
+
+
+.flat-icon:before,
+.social-icon:before {
+  line-height: 1;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: normal!important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+@mixin icon-size($size) {
+  font-size: $size;
+  width: $size;
+  height: $size;
+}
+
+.icon-16:before {@include icon-size(16px);}
+.icon-32:before {@include icon-size(32px);}
+.icon-48:before {@include icon-size(48px);}
+
+.icon--24 {
+  display: block;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  &:before {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+.icon--microscope {
+  &:before {content: '\e45a';}
+}
+
+//---- remove all below this line ----
+
+// standard icons
+.cog-icon:before {content: '\e514';}
+.down-icon:before {content: '\e5a5';}
+.view-icon:before {content: '\e551';}
+.share-icon:before {content:'\e49a';}
+
+// switcharoo
+.switch-icon:before {content: '\e586';}
+
+//arrows
+.arrowright-icon:before {content:'\e5ab';}
+.arrowleft-icon:before {content:'\e5aa';}
+
+// directional
+.left-icon:before {content:'\e5a6';}
+.right-icon:before {content:'\e5a7';}
+
+// social icons
+.facebook-icon:before {content:'\e7d0';}
+.twitter-icon:before {content:'\e7d1';}
+.pinterest-icon:before {content:'\e7d5';}
+.googleplus-icon:before {content:'\e7d9';}

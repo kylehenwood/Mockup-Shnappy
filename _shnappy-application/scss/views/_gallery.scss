@@ -1,0 +1,252 @@
+.chicken {
+  .gallery-layout__cover {
+    height: 0;
+    overflow: hidden;
+  }
+  .gallery-cover {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+}
+
+
+.gallery-controls {
+  box-shadow: $shadow-box;
+  width: 240px;
+  padding: 32px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 20;
+  background: $color-dark-dark;
+  border-radius: 0 0 4px 0;
+  div {
+    &:first-child {
+      border-top: 2px solid $color-dark-light;
+    }
+    text-transform: uppercase;
+    color: rgba(white,0.8);
+    font-weight: bold;
+    padding: 8px 0;
+    line-height: 24px;
+    height: 40px;
+    border-bottom: 2px solid $color-dark-light;
+  }
+}
+
+// Gallery view
+.gallery-layout {
+  position: relative;
+  padding: 0 0 48px;
+  background: $color-background;
+}
+.gallery-layout--dark {}
+
+.gallery-layout__admin {
+
+  // sidebar?
+}
+
+.gallery-layout__cover {
+  height: 640px;
+  background: $color-pink-dark;
+  transition: all 640ms ease-out;
+  opacity: 1;
+}
+
+.gallery-layout__navigation {
+  position: relative;
+  height: 64px;
+}
+
+.gallery-layout__container {
+  padding: 40px 24px;
+}
+.gallery-layout__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: white;
+}
+
+//
+.gallery-cover {
+  height: 640px;
+  padding: 270px 0;
+  color: white;
+  font-size: 48px;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  transform: scale(1);
+  transition: all 800ms ease-out;
+}
+
+
+//
+.gallery-navigation {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: white;
+  transition: all 80ms ease-in;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.gallery-navigation--fixed {
+  position: fixed;
+}
+
+.gallery-navigation--fixed.gallery-navigation--shadow {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.gallery-nav {
+  height: 64px;
+}
+
+.gallery-nav__item {
+  float: left;
+  cursor: pointer;
+  margin: 0 40px 0 0;
+
+  &:last-child {
+    margin: 0;
+    float: right;
+  }
+}
+
+.gallery-nav-item {
+  @include noselect;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 64px;
+  color: rgba($color-black,0.6);
+
+  &:hover {
+    color: $color-black;
+    .gallery-nav-item__underline {
+      width: 12px;
+    }
+  }
+  &:active {
+    color: $color-black;
+    .gallery-nav-item__text {
+      transform: translateY(2px);
+    }
+    .gallery-nav-item__underline {
+      width: 100%;
+    }
+  }
+  &.gallery-nav-item--active {
+    color: $color-black;
+    .gallery-nav-item__underline {
+      width: 100%;
+    }
+  }
+}
+
+.gallery-nav-item__text {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 20px 0 18px;
+}
+.gallery-nav-item__underline {
+  margin: 0 auto;
+  height: 2px;
+  width: 0;
+  transition: 80ms ease-out;
+  background: $color-pink;
+}
+
+
+
+
+
+
+
+
+
+
+// --
+
+$grid-spacing: 8px;
+
+.grid {
+  margin: 0 -$grid-spacing;
+  list-style: none;
+}
+
+.grid li {
+  display: block;
+  float: left;
+  padding: $grid-spacing;
+  //width: (100%/3);
+  width: 25%;
+  opacity: 0;
+}
+
+.grid-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  background: $color-grey;
+  //box-shadow: $shadow-box;
+  border: 2px solid $color-border-dark;
+  &:hover {
+    z-index: 1;
+    box-shadow: $shadow-hover;
+  }
+  &:active {
+    border-color: $color-pink;
+    z-index: 1;
+    box-shadow: $shadow-active;
+  }
+  img {
+    opacity: 0;
+  }
+}
+
+
+
+// --
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+  outline: none;
+  //border: none;
+  display: block;
+  max-width: 100%;
+}
+
+
+
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+  transform: translateY(200px);
+  animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+  0% { }
+  100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+  0% { }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}
+

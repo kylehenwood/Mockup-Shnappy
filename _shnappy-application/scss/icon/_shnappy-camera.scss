@@ -1,0 +1,48 @@
+// camera wrapper for loading icon
+
+.camera-shell {
+  margin: 0 auto;
+  background-position: center;
+}
+
+// size variants
+//--24
+.camera-shell--24 {
+  width: 36px;
+  height: 44px;
+  padding: 10px 6px;
+  background-size: 36px 44px;
+}
+//--48
+.camera-shell--48 {
+  width: 72px;
+  height: 88px;
+  padding: 20px 12px;
+  background-size: 72px 88px;
+}
+//--96
+.camera-shell--96 {
+  width: 144px;
+  height: 176px;
+  padding: 40px 24px;
+  background-size: 144px 176px;
+}
+
+
+// color variants
+//--white
+.camera-shell--white {
+  background-image: url('../images/camera--white.png');
+}
+
+html.svg .camera-shell--white {
+    background-image: url('../images/camera--white.svg');
+}
+
+//--pink
+.camera-shell--pink {
+  background-image: url('../images/camera--pink.png');
+}
+html.svg .camera-shell--pink {
+  background-image: url('../images/camera--pink.svg');
+}

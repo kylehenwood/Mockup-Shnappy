@@ -1,0 +1,70 @@
+// -------------
+// Shnappy icons
+// -------------
+
+.icon--dropdown {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  display: block;
+  &:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: #333;
+  }
+}
+
+
+.icon--test {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  display: block;
+  &:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: #333;
+  }
+}
+
+
+.icon--test-white {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  display: block;
+  &:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: #fff;
+  }
+}
+
+.icon--arrow-up:before {content: '\e5b0';}
+.icon--arrow-down:before {content: '\e5b1';}
+.icon--arrow-left:before {content: '\e5b2';}
+.icon--arrow-right:before {content: '\e5b3';}
+
+.icon--cross:before {
+  content:'\e5a3';
+  font-size: 24px;
+}
+
+.icon--dropdown-arrow:before {
+  //content: '\e5bd';
+  content: '\e5a5';
+}
+
+
+
+.icon--plus:before {content:'\e5a0';}
+.icon--minus:before {content:'\e5a1';}

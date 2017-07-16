@@ -1,0 +1,70 @@
+// layout
+html {
+  height: 100%;
+  min-width: 320px;
+}
+
+// main layout
+.layout {
+  position: relative;
+  overflow-y: scroll;
+  min-height: 100%;
+  background: $color-background;
+  padding: 48px 0;
+}
+
+
+//layout__children
+.layout__header {
+  //position: fixed;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding: 0 12px;
+  height: 48px;
+  width: 100%;
+  background: $color-pink;
+  //box-shadow: $shadow-hover;
+}
+
+.layout__navigation {
+  padding: 0 12px;
+  background: white;
+}
+
+.layout__container {
+  min-height: 100%;
+  width: 100%;
+  padding: 24px 12px;
+}
+.layout__container--padding {
+  padding: 240px 0;
+}
+
+.layout__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 48px;
+  padding: 0 12px;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+
+// footer
+.shnappy-footer {
+  position: relative;
+  padding: 12px;
+  line-height: 24px;
+  color: $text-grey;
+  @include font-size(1.4);
+}
+.shnappy-footer__shnappy {
+  float: left;
+}
+.shnappy-footer__name {
+  float: right;
+}

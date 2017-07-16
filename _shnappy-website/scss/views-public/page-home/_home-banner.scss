@@ -1,0 +1,58 @@
+//---------------
+// Banner Headings
+//---------------
+
+// Home Banner
+.home-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0;
+  @include screen-med {
+    display: block;
+    padding: 40px 0;
+  }
+  @include screen-mob {
+    padding: 24px 0;
+  }
+}
+.home-banner__half {
+  width: 50%;
+  float: left;
+  @include screen-med() {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+.home-banner__headline {
+  margin: 0 0 40px;
+  max-width: 400px;
+  @include screen-med {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+  @include screen-mob {
+    margin: 0 auto 24px;
+  }
+}
+.home-banner__cta {
+  margin-bottom: 40px;
+  @include screen-mob {
+    text-align: center;
+  }
+}
+
+.home-banner__signup {}
+.home-banner__screenshot {
+  background: white;
+  border-radius: 4px;
+  width: 720px;
+  height: 480px;
+  box-shadow: $shadow-300;
+  margin: 0 auto;
+  @include screen-mob {
+    max-width: 100%;
+  }
+}

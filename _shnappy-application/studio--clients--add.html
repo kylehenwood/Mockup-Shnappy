@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="svg">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Shnappy clients</title>
+  <link rel="stylesheet" type="text/css" href="scss/style.css" />
+  <link rel="import" href="_partial--upgrade-modal.html">
+
+  <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="layout">
+
+
+
+<!-- modal -->
+<div class="layout__modal js-partial-modal"></div>
+<script>
+  var link = document.querySelector('link[rel="import"]');
+  // Clone the <template> in the import.
+  var template = link.import.querySelector('.js-partial-upgrade');
+  var clone = document.importNode(template.content, true);
+  document.querySelector('.js-partial-modal').appendChild(clone);
+</script>
+
+
+
+
+<!-- layout__header -->
+<div class="layout__header">
+  <div class="center center--1120">
+
+    <div class="header-layout">
+      <div class="header-layout__logo">
+        <a class="header-logo header-logo--active" href="studio--clients.html">Shnappy</a>
+      </div>
+
+      <div class="header-layout__user js-user-dropdown">
+
+        <a class="user-button js-user-dropdown-trigger">
+          <div class="user-button__name">Kyle Henwood</div>
+          <div class="user-button__icon">
+            <span class="flat-icon icon--24 icon--dropdown-arrow"></span>
+          </div>
+        </a>
+
+        <div class="user-dropdown js-user-dropdown-content">
+
+          <div class="user-dropdown__profile">
+            <div class="user-dropdown__avatar"></div>
+            <div class="user-dropdown__username">Kyle Henwood</div>
+            <div class="user-dropdown__email">kyle.henwood@gmail.com</div>
+            <div class="user-dropdown__button">
+              <a class="button button--32 button--pink-stroke" href="account--profile.html">Edit profile</a>
+            </div>
+          </div>
+
+          <div class="user-dropdown__section">
+            <a class="user-dropdown__item" href="account--notifications.html">Notifications</a>
+            <a class="user-dropdown__item" href="account--storage.html">Linked storage</a>
+            <a class="user-dropdown__item" href="account--billing.html">Billing / Usage</a>
+            <a class="user-dropdown__item" href="account--sign-out.html">Sign out</a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="header-layout__account js-modal-trigger">
+        Upgrade now!
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- layout__navigation -->
+<div class="layout__navigation">
+  <div class="center center--1120">
+
+    <div class="primary-wrap">
+
+      <!-- heading -->
+      <div class="primary-heading">
+        <h1 class="primary-heading__studio-name">
+          StudioName Studio
+        </h1>
+      </div>
+
+      <!-- navigation -->
+      <ul class="primary clearfix">
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem primary-item--active" href="studio--clients.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Clients</div>
+            </div>
+          </a>
+        </li>
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="studio--activity.html">
+            <div class="primary-item__container">
+              <div class="primary-item__alert">
+                <div class="client-alert client-alert--pink"></div>
+              </div>
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Activity</div>
+            </div>
+          </a>
+        </li>
+
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="studio--contacts.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Contacts</div>
+            </div>
+          </a>
+        </li>
+
+
+        <li class="primary__item">
+          <a class="primary-item js-navitem" href="studio--studio.html">
+            <div class="primary-item__container">
+              <div class="primary-item__icon"></div>
+              <div class="primary-item__text">Studio</div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- layout__container -->
+<div class="layout__container">
+  <div class="center center--1120">
+
+    <!-- clients grid -->
+    <div class="module">
+      <div class="module__header">
+
+        <ul class="breadcrumb clearfix">
+          <li class="breadcrumb__item">
+            <div class="breadcrumb-item">
+              <a class="breadcrumb-item__link" href="studio--clients.html">
+                Clients
+              </a>
+            </div>
+          </li>
+          <li class="breadcrumb__item">
+            <div class="breadcrumb-item breadcrumb-item--icon">
+              <div class="breadcrumb-item__icon">
+                <span class="flat-icon icon--24 icon--arrow-right"></span>
+              </div>
+              <a class="breadcrumb-item__text">
+                Add client
+              </a>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <div class="module__body">
+
+
+
+        <div class="center center--640">
+          <div class="module module--white">
+            <header class="module__header">
+              <h4 class="heading-style">Create client</h4>
+            </header>
+
+
+            <div class="module__body module__body--margin">
+              <form class="form-style">
+
+                <!-- Client name -->
+                <div class="form-brick form-brick--margin">
+                  <label class="form-brick__label">Client name</label>
+                  <div class="form-brick__element">
+                    <input type="input" class="input-style" placeholder="Client name">
+                  </div>
+                  <div class="form-brick__validation">
+                    This is an error message, get the fuck out.
+                  </div>
+                </div>
+
+                <!-- Client password -->
+                <div class="form-brick form-brick--margin">
+                  <label class="form-brick__label">Client password</label>
+                  <div class="form-brick__element">
+                    <input type="password" class="input-style" placeholder="Client password">
+                  </div>
+                  <div class="form-brick__validation">
+                    This is an error message, get the fuck out.
+                  </div>
+                </div>
+
+                <!-- generic input select -->
+                <div class="form-brick form-brick--margin">
+                  <label class="form-brick__label">Client directory</label>
+                  <div class="form-brick__element">
+                    <div class="select-box">
+                      <div class="select-box__icon">
+                        <span class="flat-icon icon--24 icon--dropdown-arrow"></span>
+                      </div>
+                      <div class="select-box__select">
+                        <select type="text" class="select-style">
+                          <option>-- Select an option --</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-brick__validation">
+                    This is an error message, get the fuck out.
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+
+            <div class="module__body module__body--margin">
+              <div class="typography">
+                <ul>
+                  <li>if multiple storage syncs... select dropbox / box / drive</li>
+                  <li>Client directory (required)</li>
+                  <li>Create new folder - or use existing folder...</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="module__body module__body--margin">
+              <ul class="switch-list">
+
+
+                <li class="switch-list__item">
+                  <div class="switch-control">
+                    <div class="switch-control__title">Activity emails</div>
+                    <div class="switch-control__message">
+                      <div class="typography">
+                        <p>Get notified whenever this gallery has activity.</p>
+                      </div>
+                    </div>
+                    <div class="switch-control__switch">
+                      <label class="switch">
+                        <input class="switch__input" type="checkbox">
+                        <div class="switch__toggle"></div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+
+
+            <!-- advanced controls -->
+            <div class="module__body">
+
+              <div class="advanced-controls">
+                <div class="advanced-controls__visible js-advanced-controls-trigger">
+                  <div class="advanced-controls__button">
+                    <button class="button button--28 button--grey-stroke">Show advanced controls</button>
+                  </div>
+                  <div class="advanced-controls__line"></div>
+                </div>
+                <div class="advanced-controls__content js-advanced-controls-content">
+
+                  <div class="advanced-controls__content-container">
+                    <div class="typography">
+                      <p>You can change what advanced controls are set by default on the <a href="studio--studio--defaults.html">Gallery defaults</a> page, under your studio settings.</p>
+                    </div>
+                  </div>
+
+                  <!-- advanced controls -->
+                  <ul class="switch-list">
+
+                    <li class="switch-list__item">
+                      <div class="switch-control">
+                        <div class="switch-control__title">Password protected</div>
+                        <div class="switch-control__message">
+                          <div class="typography">
+                            <p>Require a password to view gallery.</p>
+                          </div>
+                        </div>
+                        <div class="switch-control__switch">
+                          <label class="switch">
+                            <input class="switch__input" type="checkbox" checked>
+                            <div class="switch__toggle"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="switch-list__item">
+                      <div class="switch-control">
+                        <div class="switch-control__title">Watermark images</div>
+                        <div class="switch-control__message">
+                          <div class="typography">
+                            <p>You can’t enable this because you don’t have a watermark setup, <a href="studio--studio--watermark.html">click here add a watermark</a>.</p>
+                            <p>Watermark every image automatically uploaded.</p>
+                          </div>
+                        </div>
+                        <div class="switch-control__switch">
+                          <label class="switch">
+                            <input class="switch__input" type="checkbox" disabled>
+                            <div class="switch__toggle"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="switch-list__item">
+                      <div class="switch-control">
+                        <div class="switch-control__title">Favourite sharing</div>
+                        <div class="switch-control__message">
+                          <div class="typography">
+                            <p>Allow clients to share their favourite images as static web pages.</p>
+                          </div>
+                        </div>
+                        <div class="switch-control__switch">
+                          <label class="switch">
+                            <input class="switch__input" type="checkbox">
+                            <div class="switch__toggle"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="switch-list__item">
+                      <div class="switch-control">
+                        <div class="switch-control__title">Allow image download</div>
+                        <div class="switch-control__message">
+                          <div class="typography">
+                            <p>Allow clients to download your photos.</p>
+                          </div>
+                        </div>
+                        <div class="switch-control__switch">
+                          <label class="switch">
+                            <input class="switch__input" type="checkbox">
+                            <div class="switch__toggle"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="switch-list__item">
+                      <div class="switch-control">
+                        <div class="switch-control__title">Gallery showcase</div>
+                        <div class="switch-control__message">
+                          <div class="typography">
+                            <p>Show gallery on your studio page.</p>
+                          </div>
+                        </div>
+                        <div class="switch-control__error">This option is only available on large plans.</div>
+                        <div class="switch-control__switch">
+                          <label class="switch">
+                            <input class="switch__input" type="checkbox" disabled>
+                            <div class="switch__toggle"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <footer class="module__footer">
+
+              <div class="button-pattern button-pattern--cancel-submit clearfix">
+                <div class="button-pattern__cancel">
+                  <a class="button button--grey-stroke button--40" href="studio--clients.html">Cancel</a>
+                </div>
+                <div class="button-pattern__submit">
+                  <a class="button button--green button--40 button--disabled">Create client</a>
+                  <a class="button button--green button--40" href="studio--clients--client.html">Create client</a>
+                  <a class="button button--green button--40 button--disabled">
+                    <div class="button__icon">
+                      <div class="aperture aperture--24 aperture--white">
+                        <div class="aperture__ring"></div>
+                        <div class="aperture__icon"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </footer>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- layout__footer -->
+<div class="layout__footer">
+  <div class="center center--1120">
+    <div class="shnappy-footer">
+      <div class="shnappy-footer__shnappy">Shnappy 2016 &copy;</div>
+      <div class="shnappy-footer__name">Created by Kyle Henwood</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

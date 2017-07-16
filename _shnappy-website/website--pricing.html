@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="svg">
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Shnappy - Pricing</title>
+  <link rel="stylesheet" type="text/css" href="scss/public.css" />
+  <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="js/public.js"></script>
+  <link rel="icon" type="image/png" href="mark_favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+</head>
+
+
+<script>
+  $(function(){
+    $(".js-partial-header").load("_partial-navigation.html");
+    $(".js-partial-mobile").load("_partial-mobile.html");
+    $(".js-partial-quote").load("_partial-quote.html");
+    $(".js-partial-footer").load("_partial-footer.html");
+    $(".js-partial-signup").load("_partial-signup.html");
+  });
+</script>
+
+
+<body class="layout">
+
+
+<!-- navigation -->
+<div class="layout__header js-partial-header"></div>
+<div class="layout__header-mobile js-partial-mobile"></div>
+<!-- // navigation end -->
+
+
+<!-- Section -->
+<div class="layout__section layout__section--grey">
+
+  <div class="center center--1120">
+
+    <div class="pricing-banner">
+      <div class="pricing-banner__headline">
+        <h1 class="heading-1 text-grey">Simple Pricing</h1>
+        <h4 class="heading-subtitle">All prices in USD</h4>
+      </div>
+      <div class="pricing-banner__cards">
+
+        <!-- pricing grid -->
+        <div class="pricing-grid clearfix">
+
+          <!-- indy -->
+          <div class="pricing-grid__item">
+            <div class="plan-card">
+              <div class="plan-card__title text-yellow">Indy</div>
+              <div class="plan-card__price">$4</div>
+              <div class="plan-card__month">/month</div>
+              <div class="plan-card__clients">upto 5 Clients</div>
+              <div class="plan-card__features">
+                <a class="plan-features" href="website--features.html#indy">
+                  <div class="plan-features__icon plan-features__icon--yellow"></div>
+                  <div class="plan-features__name">Indy Features</div>
+                  <div class="plan-features__arrow">
+                    <span class="flat-icon icon--16 icon--arrow-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="plan-card__button">
+                <a class="button button--40 button--pink">
+                  Start trial
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- freelancer -->
+          <div class="pricing-grid__item">
+            <div class="plan-card">
+              <div class="plan-card__title text-green">Freelancer</div>
+              <div class="plan-card__price">$12</div>
+              <div class="plan-card__month">/month</div>
+              <div class="plan-card__clients">upto 10 Clients</div>
+              <div class="plan-card__features">
+                <a class="plan-features" href="website--features.html#indy">
+                  <div class="plan-features__icon plan-features__icon--yellow"></div>
+                  <div class="plan-features__name">Indy Features</div>
+                  <div class="plan-features__arrow">
+                    <span class="flat-icon icon--16 icon--arrow-right"></span>
+                  </div>
+                </a>
+                <a class="plan-features" href="website--features.html#freelancer">
+                  <div class="plan-features__icon plan-features__icon--green"></div>
+                  <div class="plan-features__name">Freelancer Features</div>
+                  <div class="plan-features__arrow">
+                    <span class="flat-icon icon--16 icon--arrow-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="plan-card__button">
+                <a class="button button--40 button--pink">
+                  Start trial
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- professional -->
+          <div class="pricing-grid__item">
+            <div class="plan-card">
+              <div class="plan-card__title text-blue">Professional</div>
+              <div class="plan-card__price">$29</div>
+              <div class="plan-card__month">/month</div>
+              <div class="plan-card__clients">upto 30 Clients</div>
+              <div class="plan-card__features">
+                <a class="plan-features" href="website--features.html#indy">
+                  <div class="plan-features__icon plan-features__icon--yellow"></div>
+                  <div class="plan-features__name">Indy Features</div>
+                  <div class="plan-features__arrow">
+                    <span class="flat-icon icon--16 icon--arrow-right"></span>
+                  </div>
+                </a>
+                <a class="plan-features" href="website--features.html#freelancer">
+                  <div class="plan-features__icon plan-features__icon--green"></div>
+                  <div class="plan-features__name">Freelancer Features</div>
+                  <div class="plan-features__arrow">
+                    <span class="flat-icon icon--16 icon--arrow-right"></span>
+                  </div>
+                </a>
+                <a class="plan-features" href="website--features.html#professional">
+                  <div class="plan-features__icon plan-features__icon--blue"></div>
+                  <div class="plan-features__name">Professional Features</div>
+                  <div class="plan-features__arrow">
+                    <span class="flat-icon icon--16 icon--arrow-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="plan-card__button">
+                <a class="button button--40 button--pink">
+                  Start trial
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+      <div class="pricing-banner__note">
+        <p>All new accounts start on a 30 day trail of our <strong class="text-blue">Professional</strong> plan.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Studio Gallery -->
+<div class="layout__section layout__section--white">
+
+  <div class="center center--1120">
+
+    <div class="faq-heading">
+      <h1 class="heading-2">Frequently Asked Questions about Pricing</h1>
+    </div>
+
+    <div class="faq-grid">
+
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>How does the free trial work?</h4>
+              <p>We offer a fully featured 30 day free trial for you to get started. Once you are ready, you can then pick a plan and start your paid subscription. If your trial expires, your account becomes inactive. You can reactivate your account and start your subscription later as well.</p>
+            </div>
+          </div>
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>Can I change plans later?</h4>
+              <p>Yep! You can upgrade/downgrade your plan any time to suit your needs. Your payments are adjusted on a pro-rated basis.</p>
+            </div>
+          </div>
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>What payment methods do you accept?</h4>
+              <p>We currently accept Paypal and New Zealand bank transfer.</p>
+            </div>
+          </div>
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>Do I need a Dropbox account?</h4>
+              <p>You do indeed - Shnappy keeps your photos safe in your Dropbox. The free Dropbox plan is perfect.</p>
+            </div>
+          </div>
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>Do I need a website/hosting service?</h4>
+              <p>Nope - your Shnappy portfolio is hosted on our fully managed, fast and secure cloud platform that leverages the world's best infrastructure services.</p>
+            </div>
+          </div>
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>What is your cancellation policy?</h4>
+              <p>You can cancel at any point - though we'll be sad to see you go! Once you cancel, your client galleries will no longer be accessible.</p>
+            </div>
+          </div>
+
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>Do you offer a money-back guarantee?</h4>
+              <p>Of course! If you're not completely happy with Shnappy in your first 30 days we'll refund any payments made by you.</p>
+            </div>
+          </div>
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>How long are your contracts?</h4>
+              <p>We don't do contracts! You're free to stay as long as you'd like.</p>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- footer -->
+<div class="layout__special layout__special--signup js-partial-signup"></div>
+<div class="layout__footer js-partial-footer"></div>
+<!-- //footer end -->
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+// header bar layout
+.header-layout {
+  height: 48px;
+}
+.header-layout__logo {
+  float: left;
+  padding: 12px 0;
+}
+
+.header-logo {
+  display: block;
+  @include font-size(2.4);
+  line-height: 24px;
+  font-weight: bold;
+  font-family: $font-family-heading;
+  color: rgba(white,0.8);
+  &:hover,
+  &:active {
+    color: white;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+.header-logo--active {
+  color: $text-white;
+}
+
+
+// back to studio button
+.back-to-studio {
+  display: block;
+  position: relative;
+  padding:  0 0 0 32px;
+  color: rgba(white,0.8);
+  &:hover,
+  &:active {
+    color: white;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+.back-to-studio__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.back-to-studio__text {
+  @include nowrap;
+  @include font-size(1.4);
+  font-weight: bold;
+  line-height: 24px;
+}
+
+
+
+.header-layout__user {
+  position: relative;
+  float: right;
+  padding: 4px 0 4px 48px;
+  &:before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(black,0.2);//$color-pink-dark;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+  }
+}
+.header-layout__account {
+  @include noselect;
+  @include nowrap;
+  @include font-size(1.4);
+  cursor: pointer;
+  float: right;
+  padding: 16px 0 2px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $text-white;
+  border-bottom: 2px solid rgba(white,0.6);
+  &:hover,
+  &:active {
+    border-color: white;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+
+
+
+.user-button {
+  @include noselect;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 0 28px 0 0;
+  height: 40px;
+  color: rgba(white,0.8);
+  &:hover,
+  &:active{
+    color: white;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+.user-button--active {
+  color: white;
+}
+
+.user-button__name {
+  @include nowrap;
+  @include font-size(1.4);
+  padding: 8px 0;
+  line-height: 24px;
+  font-weight: bold;
+}
+.user-button__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 40px;
+  padding: 8px 0 8px 4px;
+}
+
+//--
+.user-dropdown {
+  display: none;
+  //opacity: 0;
+  //visibility: hidden;
+  position: absolute;
+  top: 44px;
+  right: 0;
+  background: white;
+  border-radius: 4px;
+  //border: 2px solid $color-border;
+  box-shadow: $shadow-dropdown;
+  transition: all 80ms ease-in;
+}
+.user-dropdown--active {
+  //opacity: 1;
+  //visibility: visible;
+  display: block;
+}
+
+.user-dropdown__profile {
+  position: relative;
+  padding: 16px 12px 16px 64px;
+}
+
+.user-dropdown__avatar {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  background: $color-black;
+  border-radius: 4px;
+}
+.user-dropdown__username {
+  @include nowrap;
+  @include font-size(1.6);
+  line-height: 1;
+  padding: 0 0 4px;
+  font-weight: bold;
+}
+.user-dropdown__email {
+  @include nowrap;
+  @include font-size(1.2);
+  padding: 0 0 8px;
+}
+
+
+.user-dropdown__profile,
+.user-dropdown__section {
+  animation: dropdown-animation 160ms ease-out;
+}
+
+
+@keyframes user-dropdown-animation {
+  000% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.user-dropdown__section {
+  padding: 12px 0;
+  border-top: 1px solid $color-border-light;
+}
+.user-dropdown__item {
+  @include noselect;
+  @include nowrap;
+  display: block;
+  color: $text-black!important;
+  line-height: 32px;
+  cursor: pointer;
+  position: relative;
+  padding: 0 6px 0 16px;
+  border-left: 4px solid white;
+  &:hover {
+    border-color: $color-pink;
+    background: $color-grey-lightest;
+  }
+  &:active {
+    border-color: $color-pink;
+    background: $color-grey-lighter;
+  }
+}
