@@ -1,11 +1,8 @@
 // javascripts
 $(document).ready(function(){
   dropdownController();
-  userDropdown();
   navigation();
   button();
-  modal();
-  annualSwitch();
   advancedControls();
   galleryNavigation();
   planSelect();
@@ -86,73 +83,6 @@ function advancedControls() {
 }
 
 
-
-function annualSwitch() {
-  $('.js-annual-switch').each(function(){
-    var buttons = $(this).children('.js-annual-button');
-
-    buttons.click(function(){
-      annualToggle($(this));
-    });
-
-    function annualToggle(button){
-      buttons.removeClass('annual-switch__button--active');
-      button.addClass('annual-switch__button--active');
-    }
-  });
-}
-
-function modal() {
-  console.log('doot');
-  var trigger = $('.js-modal-trigger');
-  var overlay = $('.js-modal-overlay');
-  var content = $('.js-modal-content');
-  var close = $('.js-modal-close');
-  var state = 'closed';
-
-
-
-  $(document).on('click', trigger, function(){
-    if (state == 'closed') {
-      openOverlay();
-    } else {
-      closeOverlay();
-    }
-  });
-
-
-
-  if (overlay.hasClass('modal-overlay--active') == true) {
-    state = 'open';
-  } else {
-    state = 'closed';
-  }
-
-  close.click(function(){
-    closeOverlay();
-  });
-
-  content.click(function(event){
-    event.stopPropagation();
-  });
-
-  overlay.click(function() {
-    if (state == 'open') {
-      closeOverlay();
-    }
-  });
-
-  function openOverlay() {
-    overlay.addClass('modal-overlay--active');
-    state = 'open';
-  }
-  function closeOverlay() {
-    overlay.removeClass('modal-overlay--active');
-    state = 'closed';
-  }
-}
-
-
 function button() {
   var component = $('.js-primary-button');
   var button = $('.js-primary-trigger');
@@ -221,44 +151,4 @@ function dropdownController() {
       state = 'closed';
     }
   });
-}
-
-
-function userDropdown () {
-  var dropdown = $('.js-user-dropdown');
-  var state = 'closed';
-  var trigger = dropdown.find('.js-user-dropdown-trigger');
-  var dropdownContent = dropdown.find('.js-user-dropdown-content');
-
-  if (dropdown.hasClass('user-dropdown--active')) {
-    state = 'open';
-  }
-
-
-  //Hide the menus if visible
-  $('html').click(function() {
-    if (state == 'open') {
-      closeDropdown();
-    }
-  });
-
-  dropdown.click(function(event){
-    event.stopPropagation();
-  });
-
-  trigger.click(function(){
-    if (state == 'open') {
-      closeDropdown();
-    } else {
-      trigger.addClass('user-button--active');
-      dropdownContent.addClass('user-dropdown--active');
-      state = 'open';
-    }
-  });
-
-  function closeDropdown() {
-    trigger.removeClass('user-button--active');
-    dropdownContent.removeClass('user-dropdown--active');
-    state = 'closed';
-  }
 }

@@ -6,6 +6,11 @@
 // Breadcrumb Component
 //------------
 
+.primary-breadcrumb {
+  padding: 12px 0;
+}
+
+
 .breadcrumb {
   padding: 4px 0;
   min-height: 24px;
@@ -56,16 +61,10 @@
   padding-left: 48px;
 }
 .breadcrumb-item__link {
-  @include font-size(1.6);
   @include nowrap;
   @include noselect;
   height: 24px;
   cursor: pointer;
-  display: block;
-  line-height: 16px;
-  padding: 4px 0;
-  font-weight: bold;
-  color: $text-black;
   &:hover,
   &:active {
     color: $text-pink;
@@ -75,12 +74,14 @@
   }
 }
 
+.breadcrumb-item__link,
 .breadcrumb-item__text {
-  @include font-size(1.6);
   @include nowrap;
   display: block;
+  font-size: 16px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 600;
+  color: $color-grey-900;
 }
 
 
@@ -90,10 +91,10 @@
 
 .breadcrumb-item__icon {
   position: absolute;
-  color: $color-border;
+  color: $color-grey-500;
   top: 0;
   left: 0;
   width: 48px;
   height: 24px;
-  padding: 0 12px;
+  padding: 4px 16px;
 }

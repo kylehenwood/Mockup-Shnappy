@@ -2151,16 +2151,12 @@ html {
   position: relative; }
 
 .dropdown__content {
-  display: none;
-  z-index: 2;
+  z-index: 5;
   position: absolute;
   top: 100%;
   min-width: 100%;
   max-width: 240px;
   padding: 2px 0 0; }
-
-.dropdown__content--open {
-  display: block; }
 
 .dropdown__content--dock-left {
   left: 0; }
@@ -2169,15 +2165,21 @@ html {
   right: 0; }
 
 .dropdown-content {
+  display: none;
   max-width: 100%;
   background: white;
   border-radius: 4px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden; }
 
-.dropdown-content__item {
+.dropdown-content--open {
+  opacity: 1;
+  visibility: visible;
+  display: block;
   animation: dropdown-animation 160ms ease-out;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.dropdown-content__item {
   padding: 8px 0;
   border-bottom: 1px solid #E0E0E0; }
   .dropdown-content__item:last-child {
@@ -2186,7 +2188,7 @@ html {
 @keyframes dropdown-animation {
   000% {
     opacity: 0;
-    transform: translateY(-16px); }
+    transform: translateY(8px); }
   100% {
     opacity: 1;
     transform: translateY(0); } }
@@ -2203,10 +2205,10 @@ html {
   border-left: 4px solid white; }
   .dropdown-item:hover {
     border-color: #E91E63;
-    background: #E0E0E0; }
+    background: #EEEEEE; }
   .dropdown-item:active {
     border-color: #E91E63;
-    background: #BDBDBD; }
+    background: #E0E0E0; }
 
 .dropdown-item--icon {
   padding-left: 32px; }
@@ -2223,7 +2225,8 @@ html {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #424242 !important;
+  padding: 0 16px;
+  color: #212121 !important;
   line-height: 32px; }
 
 .form-style--640 {
@@ -2534,6 +2537,9 @@ textarea:disabled:active {
   100% {
     opacity: 0;
     box-shadow: 0 0 0 16px #E91E63; } }
+.primary-breadcrumb {
+  padding: 12px 0; }
+
 .breadcrumb {
   padding: 4px 0;
   min-height: 24px; }
@@ -2572,8 +2578,6 @@ textarea:disabled:active {
   padding-left: 48px; }
 
 .breadcrumb-item__link {
-  font-size: 16px;
-  font-size: 1.6rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2584,26 +2588,22 @@ textarea:disabled:active {
   -ms-user-select: none;
   user-select: none;
   height: 24px;
-  cursor: pointer;
-  display: block;
-  line-height: 16px;
-  padding: 4px 0;
-  font-weight: 600;
-  color: #424242; }
+  cursor: pointer; }
   .breadcrumb-item__link:hover, .breadcrumb-item__link:active {
     color: #E91E63; }
   .breadcrumb-item__link:active {
     transform: translateY(2px); }
 
+.breadcrumb-item__link,
 .breadcrumb-item__text {
-  font-size: 16px;
-  font-size: 1.6rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
+  font-size: 16px;
   line-height: 24px;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #212121; }
 
 .breadcrumb-item__button {
   height: 36px; }

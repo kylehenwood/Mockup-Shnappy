@@ -24,7 +24,7 @@ html {
   padding: 0 12px;
   height: 48px;
   width: 100%;
-  background: $color-pink;
+  background: $color-pink-500;
   //box-shadow: $shadow-hover;
 }
 
@@ -39,7 +39,10 @@ html {
   padding: 24px 12px;
 }
 .layout__container--padding {
-  padding: 240px 0;
+  padding: 48px 24px;
+  @include screen-mob {
+    padding: 24px 16px;
+  }
 }
 
 .layout__footer {

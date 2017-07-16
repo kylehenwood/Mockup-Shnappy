@@ -31,7 +31,7 @@
 .back-to-studio {
   display: block;
   position: relative;
-  padding:  0 0 0 32px;
+  padding:  0 0 0 24px;
   color: rgba(white,0.8);
   &:hover,
   &:active {
@@ -45,6 +45,9 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 24px;
+  height: 24px;
+  padding: 4px 8px 4px 0;
 }
 .back-to-studio__text {
   @include nowrap;
@@ -92,14 +95,12 @@
 }
 
 
-
-
 .user-button {
   @include noselect;
   cursor: pointer;
   display: block;
   position: relative;
-  padding: 0 28px 0 0;
+  padding: 0 24px 0 0;
   height: 40px;
   color: rgba(white,0.8);
   &:hover,
@@ -125,9 +126,9 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 28px;
+  width: 24px;
   height: 40px;
-  padding: 8px 0 8px 4px;
+  padding: 12px 0 12px 8px;
 }
 
 //--
@@ -212,11 +213,11 @@
   padding: 0 6px 0 16px;
   border-left: 4px solid white;
   &:hover {
-    border-color: $color-pink;
+    border-color: $color-pink-500;
     background: $color-grey-lightest;
   }
   &:active {
-    border-color: $color-pink;
+    border-color: $color-pink-500;
     background: $color-grey-lighter;
   }
 }

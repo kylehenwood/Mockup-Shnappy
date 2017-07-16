@@ -21,13 +21,13 @@ $breakpoint-3: 640px;
 @import "shared/_breakpoints";
 
 // _icon
-@import "icon/_shnappy-loading";
+@import "icon/_icon-loading";
 @import "icon/_shnappy-camera";
 @import "icon/_shnappy-icons";
-@import "icon/_icons";
+@import "icon/_icon";
 
 // _chrome
-@import "layout/_layout";
+@import "layout/_app-layout";
 @import "layout/_layout-header";
 @import "layout/_layout-navigation";
 
