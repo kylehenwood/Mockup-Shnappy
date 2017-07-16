@@ -103,6 +103,7 @@ function annualSwitch() {
 }
 
 function modal() {
+  console.log('doot');
   var trigger = $('.js-modal-trigger');
   var overlay = $('.js-modal-overlay');
   var content = $('.js-modal-content');
@@ -111,13 +112,14 @@ function modal() {
 
 
 
-  trigger.click(function(){
+  $(document).on('click', trigger, function(){
     if (state == 'closed') {
       openOverlay();
     } else {
       closeOverlay();
     }
   });
+
 
 
   if (overlay.hasClass('modal-overlay--active') == true) {
