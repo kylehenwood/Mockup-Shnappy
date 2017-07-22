@@ -5,7 +5,7 @@ $breakpoint-1: 1120px;
 $breakpoint-2: 960px;
 $breakpoint-3: 640px;
 
-// _apply a natural box layout model to all elements
+// _apply a natural box chrome model to all elements
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -27,9 +27,9 @@ $breakpoint-3: 640px;
 @import "icon/_icon";
 
 // _chrome
-@import "layout/_app-layout";
-@import "layout/_layout-header";
-@import "layout/_layout-navigation";
+@import "chrome/layout";
+@import "chrome/_layout-header";
+@import "chrome/_layout-navigation";
 
 // _components
 @import "components/_typography";
@@ -42,7 +42,7 @@ $breakpoint-3: 640px;
 @import "components/_form-grid";
 @import "components/_form-credit";
 @import "components/_form-search";
-@import "components/_form-password";
+@import "components/_form-checkbox";
 @import "components/_breadcrumb";
 @import "components/_switch";
 @import "components/_switch-control";
@@ -54,6 +54,10 @@ $breakpoint-3: 640px;
 @import "views/_loading-grid";
 @import "views/_dropdown-grid";
 @import "views/_button-template";
+
+// -- auth (sign in/up)
+@import "views/auth/_auth";
+@import "views/auth/_auth-layout";
 
 // -- client
 @import "views/_studio--clients";

@@ -39,6 +39,7 @@ function planSelect() {
   });
 }
 
+
 function galleryNavigation(){
   if (!$('.js-gallery-navigation') == true){
     return false;

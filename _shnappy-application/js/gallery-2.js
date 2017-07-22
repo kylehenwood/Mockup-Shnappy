@@ -40,7 +40,7 @@ function fuck () {
   var noscroll; // ie?
   var isAnimating;
   var navigation = $('.js-gallery-navigation');
-  var container = $('.js-gallery-layout');
+  var container = $('.js-gallery-chrome');
   var trigger = $('.js-gallery-container');
 
 

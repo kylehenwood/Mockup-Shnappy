@@ -81,7 +81,7 @@ function fuck () {
       noscroll, // ie?
       isAnimating,
       navigation = $('.js-gallery-navigation'),
-      container = $('.js-gallery-layout'),
+      container = $('.js-gallery-chrome'),
       trigger = $('.js-gallery-container');
 
   function scrollY() {

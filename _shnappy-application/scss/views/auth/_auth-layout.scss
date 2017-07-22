@@ -1,0 +1,92 @@
+// layout
+html {
+  height: 100%;
+  min-width: 320px;
+}
+
+// main chrome
+.layout-auth {
+  position: relative;
+  overflow-y: scroll;
+  min-height: 100%;
+  background: $color-background;
+  padding: 56px 0;
+}
+
+
+//layout__children
+.layout-auth__header {
+  //position: fixed;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding: 0 16px;
+  height: 56px;
+  width: 100%;
+  background: $color-pink-500;
+}
+
+.layout-auth__container {
+  min-height: 100%;
+  width: 100%;
+  padding: 80px 12px;
+}
+
+.layout-auth__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 48px;
+  padding: 0 12px;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+
+// header
+.auth-header {
+  height: 56px;
+  padding: 4px 0;
+}
+.auth-header__logo {
+  float: left;
+  padding: 12px 0;
+}
+
+.auth-logo {
+  display: block;
+  @include font-size(2.4);
+  line-height: 24px;
+  font-weight: bold;
+  font-family: $font-family-heading;
+  color: rgba(white,0.8);
+  &:hover,
+  &:active {
+    color: white;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+.header-logo--active {
+  color: $text-white;
+}
+
+
+
+// footer
+.auth-footer {
+  position: relative;
+  padding: 12px;
+  line-height: 24px;
+  color: $text-grey;
+  @include font-size(1.4);
+}
+.auth-footer__company {
+  float: left;
+}
+.auth-footer__name {
+  float: right;
+}

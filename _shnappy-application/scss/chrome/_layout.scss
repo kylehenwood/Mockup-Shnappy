@@ -4,7 +4,7 @@ html {
   min-width: 320px;
 }
 
-// main layout
+// main chrome
 .layout {
   position: relative;
   overflow-y: scroll;
@@ -58,16 +58,16 @@ html {
 
 
 // footer
-.shnappy-footer {
+.layout-footer {
   position: relative;
   padding: 12px;
   line-height: 24px;
   color: $text-grey;
   @include font-size(1.4);
 }
-.shnappy-footer__shnappy {
+.layout-footer__shnappy {
   float: left;
 }
-.shnappy-footer__name {
+.layout-footer__name {
   float: right;
 }
