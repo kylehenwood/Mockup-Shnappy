@@ -3,7 +3,7 @@
 //-------------
 
 .modal-upgrade {
-  padding: 12px 24px;
+  padding: 12px 0;
 }
 
 // content
@@ -37,15 +37,15 @@
   line-height: 24px;
   font-weight: bold;
   padding: 6px 12px;
-  color: $color-pink;
+  color: $color-pink-500;
   text-align: center;
   background: white;
-  border: 2px solid $color-pink;
+  border: 2px solid $color-pink-500;
   &:first-child {
-    border-radius: 4px 0 0 4px;
+    border-radius: 20px 0 0 20px;
   }
   &:last-child {
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 20px 20px 0;
   }
   &:hover,
   &:active {
@@ -62,7 +62,7 @@
   z-index: 0;
   color:white!important;
   box-shadow: none!important;
-  background: $color-pink!important;
+  background: $color-pink-500!important;
 }
 
 

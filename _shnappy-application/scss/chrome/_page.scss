@@ -1,0 +1,25 @@
+// Basically an (optional) container for page content
+.page {}
+.page__header {
+  margin: 0 0 24px;
+  padding: 0 0 4px;
+  border-bottom: 1px solid $color-grey-400;
+}
+
+.page__body {}
+.page__body--margin {
+  margin: 0 0 24px;
+}
+
+.page__split {
+  margin: 24px 0;
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: $color-grey-400;
+  }
+}
+
+// usually saved for pagination outside of a modal
+.page__footer {}

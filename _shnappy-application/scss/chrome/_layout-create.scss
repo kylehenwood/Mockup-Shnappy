@@ -1,0 +1,60 @@
+// layout
+html {
+  height: 100%;
+  min-width: 320px;
+}
+
+// main chrome
+.layout-create {
+  position: relative;
+  overflow-y: scroll;
+  min-height: 100%;
+  background: $color-background;
+  //padding: 48px 0;
+}
+
+
+//layout__children
+.layout-create__header {
+  //position: fixed;
+  //position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding: 0 12px;
+  height: 56px;
+  width: 100%;
+  background: white;
+  //box-shadow: $shadow-hover;
+}
+
+.layout-create__container {
+  padding: 80px 0 24px;
+}
+
+.layout__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 48px;
+  padding: 0 12px;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+
+// footer
+.layout-footer {
+  position: relative;
+  padding: 12px;
+  line-height: 24px;
+  color: $text-grey;
+  @include font-size(1.4);
+}
+.layout-footer__shnappy {
+  float: left;
+}
+.layout-footer__name {
+  float: right;
+}

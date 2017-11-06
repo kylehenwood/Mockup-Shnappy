@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="svg">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Shnappy studio</title>
+  <link rel="stylesheet" type="text/css" href="scss/style.css" />
+  <link rel="import" href="_partial--modal-upgrade.html">
+
+  <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+  <script>
+    $(function(){
+      // Main partials
+      $(".js-partial--header-studio").load("_partial--header-studio.html");
+      $(".js-partial--modal-upgrade").load("_partial--modal-upgrade.html");
+      // Page partials
+    });
+  </script>
+</head>
+
+<body class="layout">
+
+
+<!-- modal -->
+<div class="layout__modal js-partial--modal-upgrade"></div>
+
+<!-- layout__header -->
+<div class="layout__header js-partial--header-studio"></div>
+
+<!-- layout__navigation -->
+<div class="layout__navigation">
+  <div class="center center--1120">
+
+    <div class="primary-wrap">
+
+      <!-- heading -->
+      <div class="primary-heading">
+        <h1 class="primary-heading__studio-name">
+          StudioName Studio
+        </h1>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- layout__container -->
+<div class="layout__container">
+  <div class="center center--1120">
+
+
+
+    <!-- clients grid -->
+    <div class="page">
+
+
+      <!-- no clients module -->
+      <div class="page__body">
+        <div class="module">
+          <div class="module__body">
+
+            <div class="no-clients">
+              <div class="no-clients__image"></div>
+              <div class="no-clients__message">
+                <div class="typography">
+                  <h1>Create your first Gallery</h1>
+                  <p>A Gallery to share photos with your clients.</p>
+                </div>
+              </div>
+              <div class="no-clients__actions clearfix">
+                <div class="no-clients__button">
+                  <a class="button button--pink-stroke button--40" href="studio--clients--example.html">Try a sample</a>
+                </div>
+                <div class="no-clients__button">
+                  <a class="button button--pink button--40" href="studio--clients--create.html">Create a Gallery</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- layout__footer -->
+<div class="layout__footer">
+  <div class="center center--1120">
+    <div class="layout-footer">
+      <div class="layout-footer__shnappy">Shnappy 2016 &copy;</div>
+      <div class="layout-footer__name">Created by Kyle Henwood</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

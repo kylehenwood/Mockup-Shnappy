@@ -17,106 +17,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_auth-layout.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/auth/_auth-layout.scss">
+      <file leaf-file-name="studio--clients--add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--clients--add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="1632">
+              <caret line="96" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="401" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_partial--header-auth.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/_partial--header-auth.html">
+      <file leaf-file-name="_no-clients.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/studio-clients/_no-clients.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="476">
+              <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_auth.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/auth/_auth.scss">
+      <file leaf-file-name="studio--clients--create.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--clients--create.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth--sign-up.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/auth--sign-up.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_partial--header-account.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/_partial--header-account.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_partial--header-studio.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/_partial--header-studio.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="53" column="57" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_partial--footer-auth.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/_partial--footer-auth.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+            <state relative-caret-position="884">
+              <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               <folding>
-                <element signature="e#100#106#0" expanded="true" />
+                <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth--sign-in.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/auth--sign-in.html">
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/chrome/_layout.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_layout-create.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/chrome/_layout-create.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth--sign-in.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/auth--sign-in.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="84" column="71" lean-forward="false" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="studio--no-clients.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--no-clients.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_modal-upgrade.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/components/_modal-upgrade.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="studio--clients.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--clients.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1972">
+              <caret line="116" column="83" lean-forward="false" selection-start-line="116" selection-start-column="83" selection-end-line="116" selection-end-column="83" />
               <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_layout-header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/chrome/_layout-header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -136,6 +136,7 @@
       <find>icon--24</find>
       <find>.shnappy-footer</find>
       <find>shnappy-footer</find>
+      <find>modal</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -151,29 +152,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_shnappy-application/scss/components/_form-search.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-application/scss/layout/_layout-header.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-application/scss/layout/_layout-navigation.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-application/scss/components/_dropdown.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-website/scss/components/_dropdown.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-website/scss/components/_breadcrumb.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-application/scss/components/_breadcrumb.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-application/scss/layout/_app-layout.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-website/scss/views-public/page-examples/_gallery-card.html" />
-        <option value="$PROJECT_DIR$/_shnappy-website/scss/views-public/page-examples/_example-banner.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-website/scss/public.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-application/scss/components/_gallery-card.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-application/scss/views/studio-activity.html" />
-        <option value="$PROJECT_DIR$/_shnappy-website/website--examples.html" />
-        <option value="$PROJECT_DIR$/_shnappy-website/scss/views-public/page-examples/_gallery-card.scss" />
         <option value="$PROJECT_DIR$/_shnappy-website/_gallery-content.html" />
         <option value="$PROJECT_DIR$/_shnappy-website/website--home.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/scss/auth--sign-up.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/auth--sign-up.html" />
-        <option value="$PROJECT_DIR$/_shnappy-website/_partial-navigation.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/scss/components/_form.scss" />
         <option value="$PROJECT_DIR$/_shnappy-application/scss/shared/_center.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-application/scss/style.scss" />
         <option value="$PROJECT_DIR$/_shnappy-application/scss/chrome/_layout.scss" />
         <option value="$PROJECT_DIR$/_shnappy-application/_component-library.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/account--billing--final.html" />
@@ -186,22 +169,40 @@
         <option value="$PROJECT_DIR$/_shnappy-application/gallery--albums.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/gallery--login.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/studio--activity.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--clients--add.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--clients--client.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--clients.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--contacts--add.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--contacts--contact.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--contacts.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--studio--defaults.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--studio--watermark.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--studio--website.html" />
-        <option value="$PROJECT_DIR$/_shnappy-application/studio--studio.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/_partial--footer.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/_partial--footer-auth.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/scss/views/auth/_auth-layout.scss" />
-        <option value="$PROJECT_DIR$/_shnappy-application/_partial--header-auth.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/js/main.js" />
+        <option value="$PROJECT_DIR$/_shnappy-application/auth--sign-up.html" />
+        <option value="$PROJECT_DIR$/_shnappy-website/_partial-navigation.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/_partial--header-auth.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/components/_modal.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/views/studio-clients/_client-item.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/views/studio-clients/_client-items.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/components/_module.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/views/studio-clients/_studio--clients.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--clients--add.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--clients--client.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--studio.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--studio--defaults.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--studio--watermark.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--studio--website.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--contacts.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--contacts--add.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--contacts--contact.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/_partial--modal-upgrade.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/components/_modal-upgrade.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/chrome/_page.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/views/studio-clients/_clients-none.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/views/studio-clients/_client-none.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/views/studio-clients/_no-clients.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/studio--clients--create.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--clients.html" />
         <option value="$PROJECT_DIR$/_shnappy-application/auth--sign-in.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--no-clients.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/style.scss" />
+        <option value="$PROJECT_DIR$/_shnappy-application/studio--clients--create.html" />
+        <option value="$PROJECT_DIR$/_shnappy-application/scss/chrome/_layout-create.scss" />
       </list>
     </option>
   </component>
@@ -286,7 +287,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,12 +303,6 @@
               <item name="Mockup-Shnappy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mockup-Shnappy" type="462c0819:PsiDirectoryNode" />
               <item name="_shnappy-application" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mockup-Shnappy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mockup-Shnappy" type="462c0819:PsiDirectoryNode" />
-              <item name="_shnappy-application" type="462c0819:PsiDirectoryNode" />
               <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,13 +310,14 @@
               <item name="Mockup-Shnappy" type="462c0819:PsiDirectoryNode" />
               <item name="_shnappy-application" type="462c0819:PsiDirectoryNode" />
               <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="chrome" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,11 +330,15 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kyle\Documents\GitHub\Mockup-Shnappy\_shnappy-application" />
+      <recent name="C:\Users\Kyle\Documents\GitHub\Mockup-Shnappy\_shnappy-application\scss\views\studio-studio" />
+      <recent name="C:\Users\Kyle\Documents\GitHub\Mockup-Shnappy\_shnappy-application\scss\views\studio-clients" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kyle\Documents\GitHub\Mockup-Shnappy\_shnappy-application\scss\chrome" />
+      <recent name="C:\Users\Kyle\Documents\GitHub\Mockup-Shnappy\_shnappy-application" />
+      <recent name="C:\Users\Kyle\Documents\GitHub\Mockup-Shnappy\_shnappy-application\scss\views\studio-clients" />
       <recent name="C:\Users\Kyle\Documents\GitHub\Mockup-Shnappy\_shnappy-application\scss\components" />
       <recent name="C:\Users\Kyle\Documents\GitHub\Mockup-Shnappy\_shnappy-application\scss\views\auth" />
-      <recent name="C:\Users\Kyle\Documents\GitHub\Mockup-Shnappy\_shnappy-application" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -434,12 +433,21 @@
       <workItem from="1500191179271" duration="16527000" />
       <workItem from="1500459752543" duration="1477000" />
       <workItem from="1500622775039" duration="21000" />
-      <workItem from="1500683540936" duration="6045000" />
+      <workItem from="1500683540936" duration="6284000" />
+      <workItem from="1500770053967" duration="952000" />
+      <workItem from="1500863704208" duration="1328000" />
+      <workItem from="1500874727353" duration="1449000" />
+      <workItem from="1501749203760" duration="3718000" />
+      <workItem from="1501835617535" duration="193000" />
+      <workItem from="1501912649981" duration="8668000" />
+      <workItem from="1501979943623" duration="978000" />
+      <workItem from="1502522552783" duration="11000" />
+      <workItem from="1508805801032" duration="1000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24070000" />
+    <option name="totallyTimeSpent" value="41607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,7 +464,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27373418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997677" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997677" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -468,6 +475,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -482,278 +490,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/components/_gallery-card.scss" />
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/studio-activity.html" />
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/_loading-grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-website/website--examples.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="61" column="71" lean-forward="false" selection-start-line="61" selection-start-column="71" selection-end-line="61" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-website/scss/views-public/page-examples/_gallery-card.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-website/_gallery-content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-website/website--home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="107" column="42" lean-forward="false" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-website/_partial-navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="89" lean-forward="false" selection-start-line="37" selection-start-column="89" selection-end-line="37" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/components/_form-grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/components/_form.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1259">
-          <caret line="216" column="1" lean-forward="false" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/components/_form-password.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/shared/_center.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/components/_form-checkbox.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="59" column="32" lean-forward="false" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/_component-library.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="979" column="16" lean-forward="false" selection-start-line="979" selection-start-column="16" selection-end-line="979" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/account--billing--final.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="93" column="16" lean-forward="false" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/account--billing--payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="290" column="16" lean-forward="false" selection-start-line="290" selection-start-column="16" selection-end-line="290" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/account--billing--select.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="108" column="16" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/account--billing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="124" column="16" lean-forward="false" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/account--notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="188" column="16" lean-forward="false" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/account--profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="130" column="16" lean-forward="false" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/account--storage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="124" column="16" lean-forward="false" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/gallery--albums.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="154" column="16" lean-forward="false" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/gallery--login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="127" column="16" lean-forward="false" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--activity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="149" column="16" lean-forward="false" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--clients--add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="395" column="16" lean-forward="false" selection-start-line="395" selection-start-column="16" selection-end-line="395" selection-end-column="16" />
+        <state relative-caret-position="1632">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="401" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--clients--client.html">
+    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/studio-clients/_no-clients.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="244" column="16" lean-forward="false" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--clients.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="367" column="16" lean-forward="false" selection-start-line="367" selection-start-column="16" selection-end-line="367" selection-end-column="16" />
-          <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--contacts--add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="298" column="16" lean-forward="false" selection-start-line="298" selection-start-column="16" selection-end-line="298" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--contacts--contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="183" column="16" lean-forward="false" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="316" column="16" lean-forward="false" selection-start-line="316" selection-start-column="16" selection-end-line="316" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--studio--defaults.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="299" column="16" lean-forward="false" selection-start-line="299" selection-start-column="16" selection-end-line="299" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--studio--watermark.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="212" column="16" lean-forward="false" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--studio--website.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="188" column="16" lean-forward="false" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--studio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="871">
-          <caret line="152" column="39" lean-forward="false" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/chrome/_layout-navigation.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="476">
+          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -761,126 +509,68 @@
     <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/chrome/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="36" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
+          <caret line="36" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/auth/_auth-header.scss">
+    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--clients--create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/_partial--footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/auth/_auth-signin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/auth/_auth.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/chrome/_layout-header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/views/auth/_auth-layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/_partial--header-auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/js/masonry.pkgd.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="884">
+          <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/auth--sign-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/_partial--header-account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/_partial--header-studio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="53" column="57" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_shnappy-application/_partial--footer-auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-          <folding>
-            <element signature="e#100#106#0" expanded="true" />
+            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_shnappy-application/auth--sign-in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="1428">
+          <caret line="84" column="71" lean-forward="false" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--no-clients.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/components/_modal-upgrade.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_shnappy-application/studio--clients.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="116" column="83" lean-forward="false" selection-start-line="116" selection-start-column="83" selection-end-line="116" selection-end-column="83" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_shnappy-application/scss/chrome/_layout-create.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

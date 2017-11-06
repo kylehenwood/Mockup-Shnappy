@@ -1,24 +1,16 @@
 // module
 .module {
   position: relative;
+  border-radius: 4px;
+  padding: 16px 32px 32px;
+  background: white;
+  box-shadow: $shadow-box;
 }
 .module--sidebar {
   padding-left: 232px!important;
 }
 .module--margin {
   margin: 0 0 16px;
-}
-.module--white {
-  border-radius: 4px;
-  padding: 16px 32px 32px;
-  background: white;
-  box-shadow: $shadow-box;
-}
-.module--white-even {
-  border-radius: 4px;
-  padding: 16px 32px;
-  background: white;
-  box-shadow: $shadow-box;
 }
 
 // module__children

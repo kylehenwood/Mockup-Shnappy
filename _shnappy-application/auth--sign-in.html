@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>Shnappy sign in</title>
   <link rel="stylesheet" type="text/css" href="scss/style.css" />
-  <link rel="import" href="_partial--modal-upgrade.html">
-
   <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
   <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
@@ -18,15 +16,17 @@
     });
 
 
-    function forgotPassword() {
-      var trigger = $('.js-forgot-trigger');
-      var container = $('.js-forgot-container');
+    $(document).ready(function(){
+      function forgotPassword() {
+        var trigger = $('.js-forgot-trigger');
+        var container = $('.js-forgot-container');
 
-      trigger.click(function(){
-        container.toggleClass('auth-forgot--reset');
-      });
-    }
-    forgotPassword();
+        trigger.click(function(){
+          container.toggleClass('auth-forgot--reset');
+        });
+      }
+      forgotPassword();
+    });
 
   </script>
 </head>
@@ -82,7 +82,7 @@
             </label>
           </div>
           <div class="pattern-signin__button">
-            <a class="button button--40 button--pink" href="studio--clients.html">Sign in</a>
+            <a class="button button--40 button--pink" href="studio--no-clients.html">Sign in</a>
           </div>
         </div>
 
@@ -151,7 +151,7 @@
 
 
     <div class="context-switch">
-      Don't have an account? <a href="studio--clients.html">Sign up here.</a>
+      Don't have an account? <a href="auth--sign-up.html">Sign up here.</a>
     </div>
 
   </div>

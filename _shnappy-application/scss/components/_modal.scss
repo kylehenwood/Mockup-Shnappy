@@ -84,16 +84,16 @@
   height: 32px;
   padding: 6px;
   border-radius: 50%;
-  color: $color-grey-200;
-  border: 2px solid $color-grey-600;
-  background: $color-grey-600;
+  color: $color-grey-100;
+  border: 2px solid $color-grey-500;
+  background: $color-grey-500;
   &:hover {
-    border-color: $color-grey-600;
-    background: $color-grey-500;
+    border-color: $color-grey-500;
+    background: $color-grey-400;
   }
   &:active {
-    border-color: $color-grey-600;
-    background: $color-grey-700;
+    border-color: $color-grey-500;
+    background: $color-grey-600;
   }
   @include screen-med {
     right: 0;

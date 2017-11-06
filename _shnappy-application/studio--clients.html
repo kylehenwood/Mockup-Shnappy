@@ -11,12 +11,12 @@
   <script type="text/javascript" src="js/main.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
   <script>
-      $(function(){
-          // Main partials
-          $(".js-partial--header-studio").load("_partial--header-studio.html");
-          $(".js-partial--modal-upgrade").load("_partial--modal-upgrade.html");
-          // Page partials
-      });
+    $(function(){
+      // Main partials
+      $(".js-partial--header-studio").load("_partial--header-studio.html");
+      $(".js-partial--modal-upgrade").load("_partial--modal-upgrade.html");
+      // Page partials
+    });
   </script>
 </head>
 
@@ -44,7 +44,6 @@
 
       <!-- navigation -->
       <ul class="primary clearfix">
-
         <li class="primary__item">
           <a class="primary-item js-navitem primary-item--active" href="studio--clients.html">
             <div class="primary-item__container">
@@ -53,7 +52,6 @@
             </div>
           </a>
         </li>
-
         <li class="primary__item">
           <a class="primary-item js-navitem" href="studio--activity.html">
             <div class="primary-item__container">
@@ -65,8 +63,6 @@
             </div>
           </a>
         </li>
-
-
         <li class="primary__item">
           <a class="primary-item js-navitem" href="studio--contacts.html">
             <div class="primary-item__container">
@@ -75,8 +71,6 @@
             </div>
           </a>
         </li>
-
-
         <li class="primary__item">
           <a class="primary-item js-navitem" href="studio--studio.html">
             <div class="primary-item__container">
@@ -85,7 +79,6 @@
             </div>
           </a>
         </li>
-
       </ul>
 
     </div>
@@ -102,12 +95,13 @@
 
 
     <!-- clients grid -->
-    <div class="module module--margin">
-      <div class="module__header">
+    <div class="page">
+      <!--
+      <div class="page__header">
         <h4 class="heading-style">Clients</h4>
       </div>
-
-      <div class="module__controls">
+      -->
+      <div class="page__body">
         <div class="client-controls">
           <div class="client-controls__search">
 
@@ -120,7 +114,7 @@
 
           </div>
           <div class="client-controls__button">
-            <a class="button button--pink button--40" href="studio--clients--add.html">
+            <a class="button button--pink button--40" href="studio--clients--create.html">
               <div class="button-inner button-inner--icon-after">
                 <div class="button-inner__text">Add client</div>
                 <div class="button-inner__icon-after">
@@ -130,10 +124,6 @@
             </a>
           </div>
         </div>
-      </div>
-
-      <div class="module__body">
-
         <ul class="client-grid clearfix">
 
           <li class="client-grid__item">
@@ -335,20 +325,9 @@
 
         </ul>
       </div>
-    </div>
 
-    <!-- no clients module -->
-    <div class="module">
-      <div class="module__body">
-        <div class="typography">
-          <h1>You have no clients yet!</h1>
-        </div>
-      </div>
-      <footer class="module__footer">
-        <a class="button button--pink button--40" href="studio--clients--add.html">Add one now!</a>
-      </footer>
-    </div>
 
+    </div>
   </div>
 </div>
 

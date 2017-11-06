@@ -27,9 +27,11 @@ $breakpoint-3: 640px;
 @import "icon/_icon";
 
 // _chrome
-@import "chrome/layout";
+@import "chrome/_layout";
+@import "chrome/_layout-create";
 @import "chrome/_layout-header";
 @import "chrome/_layout-navigation";
+@import "chrome/_page";
 
 // _components
 @import "components/_typography";
@@ -60,13 +62,15 @@ $breakpoint-3: 640px;
 @import "views/auth/_auth-layout";
 
 // -- client
-@import "views/_studio--clients";
-@import "views/_studio--clients--add";
-@import "views/_studio--clients--client";
+@import "views/studio-clients/_client-items";
+@import "views/studio-clients/no-clients";
+@import "views/studio-clients/_studio--clients";
+@import "views/studio-clients/_studio--clients--add";
+@import "views/studio-clients/_studio--clients--client";
 
 // -- contacts
-@import "views/_studio--contacts";
-@import "views/_studio--contacts--contact";
+@import "views/studio-studio/_studio--contacts";
+@import "views/studio-studio/_studio--contacts--contact";
 
 @import "views/_account--plan--select";
 

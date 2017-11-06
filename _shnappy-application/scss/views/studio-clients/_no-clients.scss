@@ -1,0 +1,30 @@
+// you have no clients yet screen
+
+
+.no-clients {
+  padding: 40px 0;
+}
+.no-clients__image {
+  background: $color-grey-400;
+  border-radius: 4px;
+  max-width: 480px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.no-clients__message {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.no-clients__actions {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.no-clients__button {
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 0 8px;
+}
