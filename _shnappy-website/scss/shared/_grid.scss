@@ -2,7 +2,7 @@
 
 @mixin grid-calc ($width) {
   $width: (100%/12)*$width;
-  width: unquote($width);
+  width: $width;
   float: left;
   padding: 0 24px;
 }
