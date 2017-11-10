@@ -44,3 +44,69 @@ $anim-upload-duration: 5s;
     transform: translateY(-60px);
   }
 }
+
+
+$line-anim-duration: 10s;
+
+
+// photo-group
+.svg-photo-1 {
+  animation: anim-photo-1 linear 6s infinite;
+}
+.svg-photo-2 {
+  animation: anim-photo-2 linear 6s infinite;
+  animation-delay: -3.2s
+}
+.svg-photo-3 {
+  animation: anim-photo-3 linear 6s infinite;
+  animation-delay: -1.6s
+}
+
+
+// image
+.svg-photo__image {
+  //transform: translateY(2px)
+}
+
+$time: 1s;
+
+// streak group
+.svg-photo__streaks {}
+.svg-photo__streak-1 {animation: anim-lines linear $time infinite;}
+.svg-photo__streak-2 {animation: anim-lines linear $time infinite;}
+.svg-photo__streak-3 {animation: anim-lines linear $time infinite;}
+
+
+@keyframes anim-photo-1 {
+  000% {
+    transform: translate(-40px,120px);
+  }
+  100% {
+    transform: translate(-40px,-120px);
+  }
+}
+@keyframes anim-photo-2 {
+  000% {
+    transform: translate(0,120px);
+  }
+  100% {
+    transform: translate(0,-120px);
+  }
+}
+@keyframes anim-photo-3 {
+  000% {
+    transform: translate(40px,120px);
+  }
+  100% {
+    transform: translate(40px,-120px);
+  }
+}
+
+@keyframes anim-lines {
+  000% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}

@@ -756,6 +756,7 @@ html {
   padding: 24px; }
 
 .layout__banner--alpha {
+  background: #E91E63;
   background: linear-gradient(to bottom, #E91E63, #9C27B0);
   /* Standard syntax */ }
 
@@ -1442,6 +1443,50 @@ html {
   100% {
     transform: translateY(-60px); } }
 
+.svg-photo-1 {
+  animation: anim-photo-1 linear 6s infinite; }
+
+.svg-photo-2 {
+  animation: anim-photo-2 linear 6s infinite;
+  animation-delay: -3.2s; }
+
+.svg-photo-3 {
+  animation: anim-photo-3 linear 6s infinite;
+  animation-delay: -1.6s; }
+
+.svg-photo__streak-1 {
+  animation: anim-lines linear 1s infinite; }
+
+.svg-photo__streak-2 {
+  animation: anim-lines linear 1s infinite; }
+
+.svg-photo__streak-3 {
+  animation: anim-lines linear 1s infinite; }
+
+@keyframes anim-photo-1 {
+  000% {
+    transform: translate(-40px, 120px); }
+  100% {
+    transform: translate(-40px, -120px); } }
+
+@keyframes anim-photo-2 {
+  000% {
+    transform: translate(0, 120px); }
+  100% {
+    transform: translate(0, -120px); } }
+
+@keyframes anim-photo-3 {
+  000% {
+    transform: translate(40px, 120px); }
+  100% {
+    transform: translate(40px, -120px); } }
+
+@keyframes anim-lines {
+  000% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(50%); } }
+
 .svg-share__heart {
   fill: #1E88E5; }
 
@@ -1594,52 +1639,6 @@ html {
     stroke-dashoffset: 24; }
   100% {
     stroke-dashoffset: -24; } }
-
-.svg-photo-1 {
-  transform: translateX(-50px);
-  animation: anim-photo-1 linear 6s infinite; }
-
-.svg-photo-2 {
-  animation: anim-photo-2 linear 6s infinite;
-  animation-delay: -2s; }
-
-.svg-photo-3 {
-  transform: translateX(50px);
-  animation: anim-photo-3 linear 6s infinite;
-  animation-delay: -1s; }
-
-.svg-photo__streak-1 {
-  animation: anim-lines linear 1s infinite; }
-
-.svg-photo__streak-2 {
-  animation: anim-lines linear 1s infinite; }
-
-.svg-photo__streak-3 {
-  animation: anim-lines linear 1s infinite; }
-
-@keyframes anim-photo-1 {
-  000% {
-    transform: translateY(150px); }
-  100% {
-    transform: translateY(-150px); } }
-
-@keyframes anim-photo-2 {
-  000% {
-    transform: translateY(150px); }
-  100% {
-    transform: translateY(-150px); } }
-
-@keyframes anim-photo-3 {
-  000% {
-    transform: translateY(150); }
-  100% {
-    transform: translateY(-150px); } }
-
-@keyframes anim-lines {
-  000% {
-    transform: translateY(0); }
-  100% {
-    transform: translateY(50%); } }
 
 .module {
   position: relative; }
