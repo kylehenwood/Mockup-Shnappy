@@ -1,7 +1,6 @@
 // Ensure console is defined
 if(typeof console === 'undefined') console = {"log":function(m){}};
 
-
 // PJAX links!
 pjax.connect({
   'container': 'js-pjax-container',

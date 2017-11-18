@@ -7,72 +7,51 @@
 
     <!-- menu button -->
     <div class="header-mobile__button  header-mobile__button--left">
-      <a class="mobile-header-button js-mobile-button">
+      <a class="mobile-header-button js-mobile-btn-menu">
         <span class="menu-button__close"></span>
         <span class="flat-icon icon--16 icon--menu"></span>
       </a>
     </div>
 
-    <!-- user button -->
+    <!-- account button -->
     <div class="header-mobile__button header-mobile__button--right">
-      <a class="mobile-header-button js-mobile-button">
+      <a class="mobile-header-button js-mobile-btn-account">
         <span class="menu-button__close"></span>
         <span class="flat-icon icon--16 icon--user"></span>
       </a>
     </div>
   </div>
+</div>
 
 
-  <!-- submenu-menu -->
-  <div class="header-mobile__navigation js-mobile-navigation">
-    <div class="mobile-navigation">
-      <a class="mobile-navigation__item mobile-navigation__item--active">Features</a>
-      <a class="mobile-navigation__item">Examples</a>
-      <a class="mobile-navigation__item">Pricing</a>
-      <a class="mobile-navigation__item">Blog</a>
-      <a class="mobile-navigation__item">Help center</a>
-      <div class="mobile-navigation__client">
-
-        <div class="mobile-not-logged-in">
-          <a class="button button--40 button--green">
-            Sign up free!
-          </a>
-          <span class="mobile-not-logged-in__or">or</span>
-          <a class="button button--40 button--blue-stroke">
-            Log in
-          </a>
+<!-- mobile menu -->
+<div class="layout__mobile-menu js-mobile-menu">
+  <div class="mobile-tray">
+    <div class="mobile-tray__close">
+      <div class="menu-close">
+        <div class="menu-close__icon menu-close__icon--left js-mobile-btn-close">
+          <span class="flat-icon icon--16 icon--cross"></span>
         </div>
-
       </div>
     </div>
+    <div class="mobile-tray__navigation"></div>
   </div>
 </div>
 
 
-
-<!-- submenu-user -->
-<div class="header-mobile__navigation js-mobile-navigation">
-  <div class="mobile-navigation">
-    <a class="mobile-navigation__item mobile-navigation__item--active">Features</a>
-    <a class="mobile-navigation__item">Examples</a>
-    <a class="mobile-navigation__item">Pricing</a>
-    <a class="mobile-navigation__item">Blog</a>
-    <a class="mobile-navigation__item">Help center</a>
-    <div class="mobile-navigation__client">
-
-      <div class="mobile-not-logged-in">
-        <a class="button button--40 button--green">
-          Sign up free!
-        </a>
-        <span class="mobile-not-logged-in__or">or</span>
-        <a class="button button--40 button--blue-stroke">
-          Log in
-        </a>
+<!-- mobile account -->
+<div class="layout__mobile-account js-mobile-account">
+  <div class="mobile-tray">
+    <div class="mobile-tray__close">
+      <div class="menu-close">
+        <div class="menu-close__icon menu-close__icon--right js-mobile-btn-close">
+          <span class="flat-icon icon--16 icon--cross"></span>
+        </div>
       </div>
-
     </div>
+    <div class="mobile-tray__navigation"></div>
   </div>
 </div>
 
 <!-- overlay -->
-<div class="mobile-overlay"></div>
+<div class="layout__mobile-overlay js-overlay"></div>

@@ -8,7 +8,19 @@
   display: block;
   float: left;
   width: (100%/3);
-  padding: 0 12px;;
+  padding: 0 12px;
+  @include screen-med {
+    float: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 16px;
+    &:last-child {
+      margin: 0 auto;
+    }
+    // &:nth-child(even) {
+    //   float: right;
+    // }
+  }
 }
 
 

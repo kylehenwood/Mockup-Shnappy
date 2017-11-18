@@ -20,7 +20,7 @@
               <div class="plan-card__month">/month</div>
               <div class="plan-card__clients">upto 5 Clients</div>
               <div class="plan-card__features">
-                <a class="plan-features" href="website--features.html#indy">
+                <a class="plan-features" href="index.php?pageID=features#indy">
                   <div class="plan-features__icon plan-features__icon--yellow"></div>
                   <div class="plan-features__name">Indy Features</div>
                   <div class="plan-features__arrow">
@@ -44,14 +44,14 @@
               <div class="plan-card__month">/month</div>
               <div class="plan-card__clients">upto 10 Clients</div>
               <div class="plan-card__features">
-                <a class="plan-features" href="website--features.html#indy">
+                <a class="plan-features" href="index.php?pageID=features#indy">
                   <div class="plan-features__icon plan-features__icon--yellow"></div>
                   <div class="plan-features__name">Indy Features</div>
                   <div class="plan-features__arrow">
                     <span class="flat-icon icon--16 icon--arrow-right"></span>
                   </div>
                 </a>
-                <a class="plan-features" href="website--features.html#freelancer">
+                <a class="plan-features" href="index.php?pageID=features#freelancer">
                   <div class="plan-features__icon plan-features__icon--green"></div>
                   <div class="plan-features__name">Freelancer Features</div>
                   <div class="plan-features__arrow">
@@ -76,21 +76,21 @@
               <div class="plan-card__month">/month</div>
               <div class="plan-card__clients">upto 30 Clients</div>
               <div class="plan-card__features">
-                <a class="plan-features" href="website--features.html#indy">
+                <a class="plan-features" href="index.php?pageID=features#indy">
                   <div class="plan-features__icon plan-features__icon--yellow"></div>
                   <div class="plan-features__name">Indy Features</div>
                   <div class="plan-features__arrow">
                     <span class="flat-icon icon--16 icon--arrow-right"></span>
                   </div>
                 </a>
-                <a class="plan-features" href="website--features.html#freelancer">
+                <a class="plan-features" href="index.php?pageID=features#freelancer">
                   <div class="plan-features__icon plan-features__icon--green"></div>
                   <div class="plan-features__name">Freelancer Features</div>
                   <div class="plan-features__arrow">
                     <span class="flat-icon icon--16 icon--arrow-right"></span>
                   </div>
                 </a>
-                <a class="plan-features" href="website--features.html#professional">
+                <a class="plan-features" href="index.php?pageID=features#professional">
                   <div class="plan-features__icon plan-features__icon--blue"></div>
                   <div class="plan-features__name">Professional Features</div>
                   <div class="plan-features__arrow">

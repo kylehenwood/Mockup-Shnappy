@@ -2,7 +2,8 @@
 
 $(document).ready(function(){
   const navItems = $('.js-navitem');
-  let currentItem;
+  let currentItem = null;
+
   window.addEventListener('complete',function(){
     navItems.each(function(){
       const item = $(this);
@@ -12,8 +13,11 @@ $(document).ready(function(){
   });
 
   window.addEventListener('complete',function(){
-    const classToggle = currentItem.attr('classToggle');
-    currentItem.addClass(classToggle);
+    if (currentItem != null) {
+      const classToggle = currentItem.attr('classToggle');
+      currentItem.addClass(classToggle);
+    }
+    currentItem = null;
   });
 
   navItems.each(function(){
@@ -22,5 +26,4 @@ $(document).ready(function(){
       currentItem = item;
     });
   });
-
 });

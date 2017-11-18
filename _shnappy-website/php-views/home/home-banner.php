@@ -12,7 +12,7 @@
 				<div class="home-banner__cta">
 					<button class="button button--48 button--white-stroke button--inline">
             <span class="button-inner button-inner--icon-after">
-              <div class="button-inner__text">Sign in with Dropbox</div>
+              <div class="button-inner__text">Get started for Free</div>
               <div class="button-inner__icon-after">
                 <span class="flat-icon icon--16 icon--arrow-right"></span>
               </div>
