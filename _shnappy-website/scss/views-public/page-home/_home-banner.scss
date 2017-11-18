@@ -7,13 +7,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 64px 0;
+  padding: 80px 0;
   @include screen-med {
     display: block;
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
   @include screen-mob {
-    padding: 24px 0;
+    padding: 40px 0 0;
   }
 }
 .home-banner__half {
@@ -37,6 +37,7 @@
     margin: 0 auto 24px;
   }
 }
+
 .home-banner__cta {
   margin-bottom: 40px;
   @include screen-mob {
@@ -52,7 +53,24 @@
   height: 480px;
   box-shadow: $shadow-300;
   margin: 0 auto;
-  @include screen-mob {
+  animation: home-screenshot-bounce 800ms ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  @include screen-med {
+    animation: none;
     max-width: 100%;
+    border-radius: 4px 4px 0 0;
+    height: 240px;
+  }
+}
+
+
+
+@keyframes home-screenshot-bounce {
+  000% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(4px);
   }
 }

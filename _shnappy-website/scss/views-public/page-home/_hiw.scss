@@ -1,0 +1,177 @@
+// How it works
+
+.hiw-layout {
+  margin: 0 -12px;
+  text-align: center;
+}
+.hiw-layout__item {
+  display: block;
+  float: left;
+  width: (100%/3);
+  padding: 0 12px;;
+}
+
+
+// children
+.hiw-item {
+  border-radius: 8px;
+  padding: 24px 0;
+  background: white;
+  //border: 1px solid $color-grey-300;
+  box-shadow: $shadow-100;
+}
+.hiw-item__image {
+  margin: 0 0 16px;
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.hiw-item__description {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+// SVG share and communicate
+// Share timeline:
+// length: 5s
+
+$anim-share-duration: 5s;
+
+.svg-share__heart {
+  fill: #1E88E5;
+
+}
+
+.svg-share--animate {
+//.svg-share:hover {
+  .svg-share__image,
+  .svg-share__image-shadow {
+    animation: anim-share-image cubic-bezier(0.43, 0, 0.2, 1) $anim-share-duration infinite;
+    animation-delay: -4s;
+    transform-origin: center;
+  }
+  .svg-share__heart {
+    animation: anim-share-heart cubic-bezier(0.40, 0, 0.2, 1) $anim-share-duration infinite;
+    animation-delay: -4s;
+    transform-origin: center;
+  }
+  .svg-share__message-1 {
+    animation: message-animation-1 cubic-bezier(0.18, 0.89, 0.32, 1.28) $anim-share-duration infinite;
+    animation-delay: -4s;
+    transform-origin: left top;
+  }
+  .svg-share__message-2 {
+    animation: message-animation-2 cubic-bezier(0.18, 0.89, 0.32, 1.28) $anim-share-duration infinite;
+    animation-delay: -4s;
+    transform-origin: right top;
+  }
+  .svg-share__message-3 {
+    animation: message-animation-3 cubic-bezier(0.18, 0.89, 0.32, 1.28) $anim-share-duration infinite;
+    animation-delay: -4s;
+    transform-origin: left top;
+  }
+}
+
+
+// Share animation animations.
+
+@keyframes anim-share-image {
+  000% {
+    transform: translateX(100px) scale(0.8);
+  }
+  015% {
+    transform: translateX(0px) scale(0.8);
+  }
+  020%,
+  080% {
+    transform: translateX(0) scale(1);
+  }
+  090% {
+    transform: translateX(0px) scale(0.8);
+  }
+  100% {
+    transform: translateX(-100px) scale(0.8);
+  }
+}
+
+//star
+@keyframes anim-share-heart {
+  000%,
+  065% {
+    fill: $color-grey-400;
+    transform: scale(1);
+  }
+  070% {
+    fill: #1E88E5;
+    transform: scale(2);
+  }
+  075% {
+    fill: #1E88E5;
+    transform: scale(1);
+  }
+  100% {
+    fill: #1E88E5;
+    transform: scale(1);
+  }
+}
+
+
+// messages
+@keyframes message-animation-1 {
+  000%,
+  030% {
+    transform: scale(0);
+  }
+  040%,
+  080%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  090%,
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}
+
+@keyframes message-animation-2 {
+  000%,
+  040% {
+    transform: scale(0);
+  }
+  050%,
+  080%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  090%,
+  100% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes message-animation-3 {
+  000%,
+  050% {
+    transform: scale(0);
+  }
+  060%,
+  080%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  090%,
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}

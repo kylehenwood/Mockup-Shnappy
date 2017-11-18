@@ -20,6 +20,8 @@
 @import "shared/heading";
 @import "shared/_useful";
 @import "shared/_grid";
+@import "shared/_hr";
+@import "shared/_typography";
 
 
 // _icon
@@ -28,25 +30,22 @@
 @import "icon/_icon";
 
 
+// _layout
+@import "layout/_layout";
+
+
 // _common
 // common components used repetitively across many pages.
-@import "common/_layout";
-@import "common/_header";
-@import "common/_header-mobile";
-@import "common/_footer";
-
-@import "common/_section-quote";
-@import "common/_section-signup";
-@import "common/_section-help";
+@import "chrome/_header";
+@import "chrome/_header-mobile";
+@import "chrome/_header-mobile-tray";
+@import "chrome/_footer";
 
 
 // _components
-@import "shared/_typography";
-@import "components/how-it-works";
-@import "components/how-it-works--upload";
-@import "components/how-it-works--share";
-@import "components/how-it-works--lines";
-@import "components/how-it-works--photo";
+@import "components/_section-quote";
+@import "components/_section-signup";
+@import "components/_section-help";
 @import "components/_module";
 @import "components/_button";
 @import "components/_button-primary";
@@ -69,8 +68,15 @@
 //@import "views-public/_web--cta";
 @import "views-public/_placeholder";
 
+//---
+// Home
 @import "views-public/page-home/_page-home";
 @import "views-public/page-home/_home-banner";
+@import "views-public/page-home/hiw";
+@import "views-public/page-home/hiw--upload";
+@import "views-public/page-home/hiw--share";
+@import "views-public/page-home/hiw--lines";
+@import "views-public/page-home/hiw--photo";
 
 @import "views-public/page-features/_page-features";
 @import "views-public/page-features/_features-banner";
@@ -81,6 +87,9 @@
 
 @import "views-public/page-pricing/_page-pricing";
 
+//---
+// Help
+@import "views-public/page-help/_help-subheader";
 @import "views-public/page-help/_page-help";
 @import "views-public/page-help/_help-banner";
 
