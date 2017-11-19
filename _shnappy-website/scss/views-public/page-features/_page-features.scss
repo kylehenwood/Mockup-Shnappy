@@ -7,7 +7,7 @@
 .feature-navigation__label {
   float: left;
   padding: 0 24px 0 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 36px;
 }
@@ -15,18 +15,27 @@
   cursor: pointer;
   float: left;
   margin: 0 4px;
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 24px;
   line-height: 32px;
   font-weight: 600;
-  border: 2px solid $color-grey-300;
-  border-radius: 4px;
-  background: $color-grey-300;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: white;
+  box-shadow: $shadow-100;
+  &:hover {
+    box-shadow: $shadow-200;
+  }
+  &:active {
+    box-shadow: $shadow-200;
+    transform: translateY(2px);
+  }
 }
 
 .feature-navigation__item--pink {
   color: $color-pink-600;
   &.feature-navigation__item--active,
+  &:hover,
   &:active {
     border-color: $color-pink-600;
     background: $color-pink-600;
@@ -39,6 +48,7 @@
 .feature-navigation__item--yellow {
   color: $color-yellow-900;
   &.feature-navigation__item--active,
+  &:hover,
   &:active {
     border-color: $color-yellow-900;
     background: $color-yellow-900;
@@ -52,6 +62,7 @@
 .feature-navigation__item--green {
   color: $color-green-600;
   &.feature-navigation__item--active,
+  &:hover,
   &:active {
     border-color: $color-green-600;
     background: $color-green-600;
@@ -65,6 +76,7 @@
 .feature-navigation__item--blue {
   color: $color-blue-600;
   &.feature-navigation__item--active,
+  &:hover,
   &:active {
     border-color: $color-blue-600;
     background: $color-blue-600;

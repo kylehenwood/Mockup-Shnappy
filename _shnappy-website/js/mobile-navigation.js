@@ -122,10 +122,19 @@ $(document).ready(function(){
       openAccountDrawer();
     }
   });
+
   // close on resize
   $(window).resize(function(){
     if (menuOpen === true) {
       closeMobileDrawer();
     }
   });
+
+  // close on pjax complete
+  window.addEventListener('complete',function(){
+    if (menuOpen === true) {
+      closeMobileDrawer();
+    }
+  });
+
 });

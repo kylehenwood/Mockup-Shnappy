@@ -34,7 +34,7 @@
   height: 56px;
   padding: 20px;
   color: $color-pink-500;
-  background: rgba(white,0.05);
+  //background: rgba(white,0.05);
   color: rgba(white,0.8);
   color: $color-pink-400;
   &:hover {
@@ -52,3 +52,46 @@
 .menu-close__icon--right {
   right: 0;
 }
+
+//
+.mobile-navigation {}
+.mobile-navigation__item {
+  position: relative;
+  display: block;
+  height: 48px;
+  padding: 12px 24px;
+  color: rgba(white,0.7);
+  font-weight: 600;
+  font-size: 14px;
+  font-family: $font-family;
+  line-height: 24px;
+  border-bottom: 1px solid $color-grey-800;
+  &:hover {
+    color: white;
+    background: rgba(white,0.05);
+  }
+  &:active {
+    color: white;
+    background: black;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 4px;
+    top: 0;
+    left: 0;
+    transition: background 200ms ease-in;
+  }
+}
+.mobile-navigation__item--active {
+  color: white;
+  &:before {
+    background: $color-pink-500;
+  }
+}
+
+//--
+.mobile-navigation__subheading {}
+.mobile-navigation__subitem {}

@@ -70,7 +70,7 @@
   padding: 20px;
   outline: none;
   border: none;
-  background: rgba(white,0.05);
+  //background: rgba(white,0.05);
   color: rgba(white,0.8);
   color: $color-pink-400;
   &:hover {
@@ -84,21 +84,4 @@
 }
 .menu-button--open {
   background: $color-pink-700;
-}
-
-
-.mobile-navigation {
-  animation: mobile-navigation-animation 160ms ease-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes mobile-navigation-animation {
-  000% {
-    opacity: 0;
-    transform: translateY(-16px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

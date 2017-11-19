@@ -1210,7 +1210,6 @@ html {
   padding: 20px;
   outline: none;
   border: none;
-  background: rgba(255, 255, 255, 0.05);
   color: rgba(255, 255, 255, 0.8);
   color: #EC407A; }
   .mobile-header-button:hover {
@@ -1222,18 +1221,6 @@ html {
 
 .menu-button--open {
   background: #C2185B; }
-
-.mobile-navigation {
-  animation: mobile-navigation-animation 160ms ease-out;
-  animation-fill-mode: forwards; }
-
-@keyframes mobile-navigation-animation {
-  000% {
-    opacity: 0;
-    transform: translateY(-16px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
 
 .mobile-tray {
   width: 320px; }
@@ -1263,7 +1250,6 @@ html {
   height: 56px;
   padding: 20px;
   color: #E91E63;
-  background: rgba(255, 255, 255, 0.05);
   color: rgba(255, 255, 255, 0.8);
   color: #EC407A; }
   .menu-close__icon:hover {
@@ -1278,6 +1264,38 @@ html {
 
 .menu-close__icon--right {
   right: 0; }
+
+.mobile-navigation__item {
+  position: relative;
+  display: block;
+  height: 48px;
+  padding: 12px 24px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Open Sans", Open-Sans, helvetica, arial;
+  line-height: 24px;
+  border-bottom: 1px solid #424242; }
+  .mobile-navigation__item:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.05); }
+  .mobile-navigation__item:active {
+    color: white;
+    background: black; }
+  .mobile-navigation__item:before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 4px;
+    top: 0;
+    left: 0;
+    transition: background 200ms ease-in; }
+
+.mobile-navigation__item--active {
+  color: white; }
+  .mobile-navigation__item--active:before {
+    background: #E91E63; }
 
 .footer {
   padding: 40px 0 0; }
@@ -3011,7 +3029,7 @@ textarea:disabled:active {
 .feature-navigation__label {
   float: left;
   padding: 0 24px 0 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 36px; }
 
@@ -3019,17 +3037,23 @@ textarea:disabled:active {
   cursor: pointer;
   float: left;
   margin: 0 4px;
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 24px;
   line-height: 32px;
   font-weight: 600;
-  border: 2px solid #E0E0E0;
-  border-radius: 4px;
-  background: #E0E0E0; }
+  border: 2px solid white;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .feature-navigation__item:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .feature-navigation__item:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(2px); }
 
 .feature-navigation__item--pink {
   color: #D81B60; }
-  .feature-navigation__item--pink.feature-navigation__item--active, .feature-navigation__item--pink:active {
+  .feature-navigation__item--pink.feature-navigation__item--active, .feature-navigation__item--pink:hover, .feature-navigation__item--pink:active {
     border-color: #D81B60;
     background: #D81B60;
     color: white; }
@@ -3038,7 +3062,7 @@ textarea:disabled:active {
 
 .feature-navigation__item--yellow {
   color: #F57F17; }
-  .feature-navigation__item--yellow.feature-navigation__item--active, .feature-navigation__item--yellow:active {
+  .feature-navigation__item--yellow.feature-navigation__item--active, .feature-navigation__item--yellow:hover, .feature-navigation__item--yellow:active {
     border-color: #F57F17;
     background: #F57F17;
     color: white; }
@@ -3047,7 +3071,7 @@ textarea:disabled:active {
 
 .feature-navigation__item--green {
   color: #43A047; }
-  .feature-navigation__item--green.feature-navigation__item--active, .feature-navigation__item--green:active {
+  .feature-navigation__item--green.feature-navigation__item--active, .feature-navigation__item--green:hover, .feature-navigation__item--green:active {
     border-color: #43A047;
     background: #43A047;
     color: white; }
@@ -3056,7 +3080,7 @@ textarea:disabled:active {
 
 .feature-navigation__item--blue {
   color: #1E88E5; }
-  .feature-navigation__item--blue.feature-navigation__item--active, .feature-navigation__item--blue:active {
+  .feature-navigation__item--blue.feature-navigation__item--active, .feature-navigation__item--blue:hover, .feature-navigation__item--blue:active {
     border-color: #1E88E5;
     background: #1E88E5;
     color: white; }
