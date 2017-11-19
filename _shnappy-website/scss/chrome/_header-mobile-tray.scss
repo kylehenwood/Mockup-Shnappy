@@ -21,12 +21,11 @@
 
 
 
-
+// Close button
 .menu-close {
   position: relative;
   height: 56px;
 }
-
 .menu-close__icon {
   cursor: pointer;
   position: absolute;
@@ -47,7 +46,6 @@
     background: black;
   }
 }
-
 .menu-close__icon--left {
   left: 0;
 }

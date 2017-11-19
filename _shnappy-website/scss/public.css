@@ -897,9 +897,6 @@ html {
 
 .layout--menu-isopen {
   overflow: hidden; }
-  .layout--menu-isopen .layout__mobile-overlay {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.5); }
 
 .layout__mobile-account,
 .layout__mobile-menu {
@@ -922,10 +919,19 @@ html {
 
 .layout__mobile-menu--animate-in {
   display: block;
-  animation: 200ms mobile-menu-in ease-out;
+  animation: 200ms mobile-menu-animation ease-out;
   animation-fill-mode: forwards; }
 
-@keyframes mobile-menu-in {
+.layout__mobile-menu--animate-out {
+  display: block;
+  animation: 160ms mobile-menu-animation linear;
+  animation-fill-mode: forwards;
+  animation-direction: reverse; }
+
+.layout__mobile-menu--active {
+  display: block; }
+
+@keyframes mobile-menu-animation {
   000% {
     transform: translateX(-100%); }
   100% {
@@ -933,10 +939,19 @@ html {
 
 .layout__mobile-account--animate-in {
   display: block;
-  animation: 200ms mobile-account-in ease-out;
+  animation: 200ms mobile-account-animation ease-out;
   animation-fill-mode: forwards; }
 
-@keyframes mobile-account-in {
+.layout__mobile-account--animate-out {
+  display: block;
+  animation: 160ms mobile-account-animation linear;
+  animation-fill-mode: forwards;
+  animation-direction: reverse; }
+
+.layout__mobile-account--active {
+  display: block; }
+
+@keyframes mobile-account-animation {
   000% {
     transform: translateX(100%); }
   100% {
@@ -950,8 +965,28 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
-  transition: all 200ms ease-out; }
+  background-color: transparent; }
+
+.layout__mobile-overlay--active {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.layout__mobile-overlay--animate-in {
+  display: block;
+  animation: 200ms mobile-overlay-animation ease-out;
+  animation-fill-mode: forwards; }
+
+.layout__mobile-overlay--animate-out {
+  display: block;
+  animation: 160ms mobile-overlay-animation linear;
+  animation-fill-mode: forwards;
+  animation-direction: reverse; }
+
+@keyframes mobile-overlay-animation {
+  000% {
+    background-color: transparent; }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5); } }
 
 .header {
   position: relative;
