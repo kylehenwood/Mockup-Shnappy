@@ -41,6 +41,7 @@
 @import "chrome/_header";
 @import "chrome/_header-mobile";
 @import "chrome/_header-mobile-tray";
+@import "chrome/_subheader";
 @import "chrome/_footer";
 
 
@@ -61,6 +62,8 @@
 @import "components/_switch";
 @import "components/_switch-control";
 @import "components/_page-alert";
+
+@import "components/_intro-animations";
 
 
 // _views
@@ -85,9 +88,12 @@
 
 @import "views-public/page-examples/_page-examples";
 @import "views-public/page-examples/_example-banner";
-@import "views-public/page-examples/_gallery-card.scss";
+@import "views-public/page-examples/_card-gallery.scss";
 
+//---
+// Pricing
 @import "views-public/page-pricing/_page-pricing";
+@import "views-public/page-pricing/_card-plan";
 
 //---
 // Help

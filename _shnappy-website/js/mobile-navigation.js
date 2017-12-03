@@ -21,7 +21,7 @@ $(document).ready(function(){
   function closeMobileDrawer() {
     menuOpen = false;
     layout.removeClass('layout--menu-isopen');
-
+    $(document).focus();
     if (mobileTrayMenu.hasClass('layout__mobile-menu--active')) {
       mobileTrayMenu.addClass('layout__mobile-menu--animate-out');
       // on animation finish remove class animate-out
@@ -46,7 +46,7 @@ $(document).ready(function(){
   // open account draw --left
   function openMenuDrawer() {
     mobileOverlay();
-
+    mobileTrayMenu.focus();
     mobileTrayMenu.addClass('layout__mobile-menu--animate-in');
     mobileTrayMenu.one('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
       mobileTrayMenu.removeClass('layout__mobile-menu--animate-in');
@@ -57,7 +57,7 @@ $(document).ready(function(){
   // open account draw --right
   function openAccountDrawer() {
     mobileOverlay();
-
+    mobileTrayAccount.focus();
     mobileTrayAccount.addClass('layout__mobile-account--animate-in');
     mobileTrayAccount.one('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
       mobileTrayAccount.removeClass('layout__mobile-account--animate-in');

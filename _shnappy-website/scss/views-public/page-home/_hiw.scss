@@ -22,11 +22,18 @@
     // }
   }
 }
-
+.hiw-layout__heading {
+  margin-bottom: 40px;
+  @include screen-mob {
+    margin-bottom: 24px;
+  }
+}
 
 // children
 .hiw-item {
-  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
   padding: 24px 0;
   background: white;
   //border: 1px solid $color-grey-300;
@@ -35,14 +42,31 @@
 .hiw-item__image {
   margin: 0 0 16px;
   svg {
+    width: 240px;
+    height: 200px;
     display: block;
     margin: 0 auto;
   }
 }
-.hiw-item__description {
+.hiw-item__title {
   text-align: center;
   font-weight: 600;
   font-size: 16px;
+}
+.hiw-item__step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $color-pink-500;
+  height: 48px;
+  width: 48px;
+  padding: 0 8px 8px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 0 0 32px 0;
 }
 
 

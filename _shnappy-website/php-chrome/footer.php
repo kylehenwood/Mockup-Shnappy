@@ -57,5 +57,4 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="js/pjax-connect.js"></script>
 </body>

@@ -10,7 +10,7 @@
   display: block;
   font-family: $font-family;
   margin: 0;
-  width: 100%;
+  max-width: 100%;
   color: $color-grey-800;
   font-weight: 600;
   text-align: center;
@@ -32,6 +32,7 @@
 .button-primary--inline {
   display: inline-block;
   width: auto;
+  max-width: 100%;
 }
 
 
@@ -65,8 +66,11 @@
   display: inline-block;
   padding-right: 32px;
 }
-.button-primary__inner-text {
-  line-height: 24px;
+.button-primary__text {
+  width: 100%;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .button-primary__inner-arrow {
   position: absolute;

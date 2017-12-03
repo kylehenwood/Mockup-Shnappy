@@ -1,0 +1,174 @@
+//---------------
+// Pricing Page
+//---------------
+
+.pricing-banner {}
+.pricing-banner__headline {
+  text-align: center;
+  margin: 0 0 32px;
+}
+.pricing-banner__note {
+  margin: 40px 0 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.pricing-grid {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.pricing-grid__item {
+  float: left;
+  width: (100%/3);
+  padding: 8px;
+  @include screen-mob {
+    width: 100%;
+  }
+}
+
+
+
+// Plan card
+.card-plan {
+  padding: 16px 24px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: $shadow-100;
+  margin: 0 auto;
+}
+.card-plan__title {
+  padding: 0 0 12px;
+  text-align: center;
+  border-bottom: 2px solid $color-grey-200;
+  margin-bottom: 32px;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: $font-family-heading;
+}
+.card-plan__price {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.card-plan__month {
+  text-align: center;
+  font-style: italic;
+  color: $color-grey-500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+.card-plan__clients {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.card-plan__features {
+  min-height: 124px;
+  margin: 0 0 16px;
+  padding: 12px 0;
+  border-top: 2px solid $color-grey-200;
+  border-bottom: 2px solid $color-grey-200;
+  @include screen-mob {
+    min-height: 0;
+  }
+}
+.card-plan__button {}
+
+
+// link to plan features.
+.plan-features {
+  @include noselect;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  height: 32px;
+  padding: 4px 40px;
+  border-radius: 16px;
+  &:hover,
+  &:active{
+    background: $color-grey-200;
+    .plan-features__arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  &:active {
+    background: $color-grey-300;
+  }
+}
+.plan-features__icon {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  //border-radius: 4px;
+  background: $color-grey-800;
+}
+.plan-features__icon--yellow {
+  background: $color-yellow-900;
+}
+.plan-features__icon--green {
+  background: $color-green-600;
+}
+.plan-features__icon--blue {
+  background: $color-blue-600;
+}
+
+
+.plan-features__name {
+  @include nowrap;
+  color: $color-grey-800;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.plan-features__arrow {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  color: $color-grey-600;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all ease-in 80ms;
+}
+
+
+// Frequently Asked Questions
+.faq-grid {
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  margin: 0 -16px;
+}
+
+.faq-grid__item {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding: 0 16px;
+  @include screen-mob {
+    width: 100%;
+  }
+}
+
+.faq-heading {
+  margin: 0 0 40px;
+}
+
+.faq-block {
+  margin: 0 0 40px;
+}

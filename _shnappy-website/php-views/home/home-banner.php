@@ -4,7 +4,7 @@
 	<div class="center center--1120">
 
 		<div class="home-banner clearfix">
-			<div class="home-banner__half">
+			<div class="home-banner__half anim--in-left">
 				<div class="home-banner__headline">
 					<h1 class="heading-1 text-white">Client proofing has never been easier.</h1>
 					<h4 class="heading-subtitle text-white">Communicate with clients, Proof photos.</h4>
@@ -20,7 +20,7 @@
 					</button>
 				</div>
 			</div>
-			<div class="home-banner__half">
+			<div class="home-banner__half anim--in-right">
 				<div class="home-banner__screenshot"></div>
 			</div>
 		</div>

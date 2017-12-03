@@ -44,6 +44,11 @@ function displayContent()	{
       $content = setContent('./php-views/privacy/_construct.php');
       break;
 
+      case $pageName == 'gallery-example';
+      $title = 'Shnappy - Example Gallery';
+      $content = setContent('./php-views/example-gallery/_construct.php');
+      break;
+
       // 404 page not found
       default:
       $title = '404 Page not found';

@@ -2,7 +2,7 @@
   <div class="header-mobile">
     <!-- logo button -->
     <div class="header-mobile__logo">
-      <a class="mobile-logo" href="#"></a>
+      <a class="mobile-logo js-navitem <?php if ($navSelectedHome) {echo'mobile-logo--active';} ?>" data-pjax="js-pjax-container" activeClass="mobile-logo--active" href="index.php"></a>
     </div>
 
     <!-- menu button -->
@@ -36,19 +36,19 @@
     </div>
     <div class="mobile-tray__navigation">
       <div class="mobile-navigation">
-        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedHome) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" classToggle="mobile-navigation__item--active" href="index.php">
+        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedHome) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" activeClass="mobile-navigation__item--active" href="index.php">
           Home
         </a>
-        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedFeatures) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" classToggle="mobile-navigation__item--active" href="index.php?pageID=features">
+        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedFeatures) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" activeClass="mobile-navigation__item--active" href="index.php?pageID=features">
           Features
         </a>
-        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedExamples) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" classToggle="mobile-navigation__item--active" href="index.php?pageID=examples">
+        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedExamples) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" activeClass="mobile-navigation__item--active" href="index.php?pageID=examples">
           Examples
         </a>
-        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedPricing) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" classToggle="mobile-navigation__item--active" href="index.php?pageID=pricing">
+        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedPricing) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" activeClass="mobile-navigation__item--active" href="index.php?pageID=pricing">
           Pricing
         </a>
-        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedHelp) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" classToggle="mobile-navigation__item--active" href="index.php?pageID=help">
+        <a class="mobile-navigation__item js-navitem <?php if ($navSelectedHelp) { echo'mobile-navigation__item--active';} ?>" data-pjax="js-pjax-container" activeClass="mobile-navigation__item--active" href="index.php?pageID=help">
           Help center
         </a>
       </div>
@@ -67,16 +67,22 @@
         </div>
       </div>
     </div>
+    <div class="mobile-tray__signup">
+      <div class="mobile-tray__signup-button">
+        <a class="button button--40 button--pink">Sign up<a>
+      </div>
+      <div class="mobile-tray__signup-or">or</div>
+      <div class="mobile-tray__signup-button">
+        <a class="button button--40 button--white-stroke">Log in</a>
+      </div>
+    </div>
     <div class="mobile-tray__navigation">
       <div class="mobile-navigation">
         <a class="mobile-navigation__item" href="index.php">
-          Sign up
-        </a>
-        <a class="mobile-navigation__item" href="index.php">
-          Log in
-        </a>
-        <a class="mobile-navigation__item" href="index.php">
           Help center
+        </a>
+        <a class="mobile-navigation__item" href="index.php">
+          Contact us
         </a>
       </div>
     </div>

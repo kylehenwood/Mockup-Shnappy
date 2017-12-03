@@ -1,6 +1,6 @@
 <div class="layout__section layout__section--white">
 
-  <div class="center center--1120">
+  <div class="center center--1120 anim--in-bottom">
 
     <div class="grid">
       <div class="row row--align-center">
@@ -12,9 +12,9 @@
             </div>
             <div class="website-example__content">
               <div class="typography">
-                <p>The studio website is an open canvas for you to share the work you are most proud of with the world, visitors can view your work, and contact you directly through this medium.</p>
-                <p>This is a <strong class="text-blue">Professional Feature</strong> and is unlocked at a different levels.</p>
-                <p>Great way to showcase your work to possible clients or a Gateway for new clients to contact you.</p>
+                <p>The studio website lets you share the work you are most proud of with the world, visitors can view your work, and contact you directly.</p>
+                <p>It's a great way to showcase your work to possible clients, and a gateway for new clients to contact you.</p>
+                <p>This feature is only available to <strong class="text-blue">Professional</strong> plans.</p>
               </div>
             </div>
           </div>

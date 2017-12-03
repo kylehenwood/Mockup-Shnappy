@@ -4,18 +4,18 @@ $(document).ready(function(){
   const navItems = $('.js-navitem');
   let currentItem = null;
 
-  window.addEventListener('complete',function(){
+  $(document).on('pjax:success',function(){
     navItems.each(function(){
       const item = $(this);
-      const classToggle = item.attr('classToggle');
-      item.removeClass(classToggle);
+      const activeClass = item.attr('activeClass');
+      item.removeClass(activeClass);
     });
   });
 
-  window.addEventListener('complete',function(){
+  $(document).on('pjax:success',function(){
     if (currentItem != null) {
-      const classToggle = currentItem.attr('classToggle');
-      currentItem.addClass(classToggle);
+      const activeClass = currentItem.attr('activeClass');
+      currentItem.addClass(activeClass);
     }
     currentItem = null;
   });
@@ -27,3 +27,13 @@ $(document).ready(function(){
     });
   });
 });
+
+
+// LOADING HANDLERS
+// if inpage link... js-pjax-loading
+
+// pjax:beforeSend
+// fade in loading overlay
+
+// pjax:beforeReplace
+// remove loading overlay

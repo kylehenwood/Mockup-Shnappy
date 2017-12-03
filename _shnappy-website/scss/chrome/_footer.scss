@@ -79,6 +79,9 @@
   font-size: 16px;
   line-height: 24px;
   margin: 4px 0;
+  @include screen-mob {
+    line-height: 32px;
+  }
 }
 
 

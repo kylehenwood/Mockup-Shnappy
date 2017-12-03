@@ -2,7 +2,7 @@
 <!-- Studio Gallery -->
 <div class="layout__section layout__section--white">
 
-  <div class="center center--1120">
+  <div class="center center--1120 anim--in-bottom">
 
     <div class="faq-heading">
       <h1 class="heading-2">Frequently Asked Questions about Pricing</h1>

@@ -19,12 +19,31 @@
   height: 40px;
 }
 
+// login
+.mobile-tray__signup {
+  border-top: 1px solid $color-grey-800;
+  padding: 12px 24px;
+  background: rgba(black,0.2);
+}
+.mobile-tray__signup-button {
+  padding: 8px 0;
+}
 
+.mobile-tray__signup-or {
+  display: block;
+  z-index: 2;
+  color: rgba(white,0.7);
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+}
 
 // Close button
 .menu-close {
   position: relative;
   height: 56px;
+  background: rgba(white,0.1);
 }
 .menu-close__icon {
   cursor: pointer;

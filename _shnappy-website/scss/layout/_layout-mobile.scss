@@ -13,6 +13,7 @@
   height: 100%;
   max-width: 320px;
   background: $color-grey-900;
+  -webkit-overflow-scrolling: touch;
 }
 .layout__mobile-menu {
   left: 0;

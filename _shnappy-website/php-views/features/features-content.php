@@ -5,7 +5,7 @@
 
     <div class="feature-page">
 
-      <div class="feature-page__navigation">
+      <div class="feature-page__navigation anim--in-left">
         <div class="feature-navigation clearfix">
           <div class="feature-navigation__label">Filter features:</div>
           <div class="feature-navigation__item feature-navigation__item--pink feature-navigation__item--active">All</div>
@@ -17,7 +17,7 @@
 
     </div>
 
-    <div class="feature-page__section">
+    <div class="feature-page__section anim--in-bottom">
       <div class="feature-page__section-heading">
         <h2 class="heading-3">Photographer Features</h2>
       </div>
@@ -173,7 +173,7 @@
     </div>
 
 
-    <div class="feature-page__section">
+    <div class="feature-page__section anim--in-bottom">
       <div class="feature-page__section-heading">
         <h2 class="heading-3">Client Features</h2>
       </div>

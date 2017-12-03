@@ -2,7 +2,7 @@
 <div class="layout__banner layout__banner--gamma layout__banner--pink">
   <div class="center center--1120">
 
-    <div class="help-banner">
+    <div class="help-banner anim--in-bottom">
       <div class="help-banner__headline">
         <h1 class="heading-2 text-white text-center">Help Center</h1>
       </div>
