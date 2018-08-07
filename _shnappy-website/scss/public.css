@@ -50,6 +50,9 @@ table {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  background: black; }
+
 .clearfix:after {
   content: '';
   display: block;

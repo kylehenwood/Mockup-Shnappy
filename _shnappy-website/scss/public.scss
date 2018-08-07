@@ -10,6 +10,9 @@
   box-sizing: border-box;
 }
 
+html {
+  background: black;
+}
 
 // _shared imports
 @import "shared/_mixin";
