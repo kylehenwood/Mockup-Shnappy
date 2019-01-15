@@ -1,4 +1,4 @@
-<svg  class="js-svg-share svg-share" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg  class="js-svg-share svg-share svg-share--animate" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="share">
     <rect id="bounds_1_" style="fill:none;" width="240" height="200"/>
     <g id="ring_2_">

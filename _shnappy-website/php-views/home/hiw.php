@@ -40,7 +40,7 @@
 				<div class="hiw-item">
 					<div class="hiw-item__step">3</div>
 					<div class="hiw-item__image">
-						<?php include 'hiw-share.php';?>
+						<?php include 'hiw-share--animated.php';?>
 					</div>
 					<div class="hiw-item__title">
 						Share with clients
