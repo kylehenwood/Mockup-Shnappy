@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+
+const faqs = [
+  { q: 'How does the free trial work?', a: "We offer a fully featured 30 day free trial for you to get started. Once you are ready, you can pick a plan and start your paid subscription." },
+  { q: 'Can I change plans later?', a: 'Yep! You can upgrade or downgrade your plan any time. Your payments are adjusted on a pro-rated basis.' },
+  { q: 'What payment methods do you accept?', a: 'We currently accept Paypal and New Zealand bank transfer.' },
+  { q: 'Do I need a Dropbox account?', a: 'You do — Shnappy keeps your photos safe in your Dropbox. The free Dropbox plan is perfect.' },
+  { q: 'Do I need a website/hosting service?', a: "Nope — your Shnappy portfolio is hosted on our fully managed cloud platform." },
+  { q: 'What is your cancellation policy?', a: "You can cancel at any time. Once you cancel, your client galleries will no longer be accessible." },
+  { q: 'Do you offer a money-back guarantee?', a: "If you're not happy with Shnappy in your first 30 days we'll refund any payments made." },
+  { q: 'How long are your contracts?', a: "We don't do contracts! You're free to stay as long as you'd like." },
+];
+---
+<Base title="Help — Shnappy" active="help">
+  <div class="layout__banner layout__banner--gamma layout__banner--pink">
+    <div class="center center--1120">
+      <div class="help-banner">
+        <div class="help-banner__headline"><h1 class="heading-2 text-white text-center">Help Center</h1></div>
+        <div class="help-banner__search">
+          <form class="help-search">
+            <input class="help-search__input" type="text" placeholder="Search…" />
+            <button class="button button--36 button--pink" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout__section layout__section--white">
+    <div class="center center--1120">
+      <div class="faq-heading"><h1 class="heading-2">Frequently Asked Questions</h1></div>
+      <div class="faq-grid">
+        {faqs.map(item => (
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>{item.q}</h4>
+              <p>{item.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="layout__contact">
+    <div class="center center--640">
+      <div class="section-help">
+        <div class="section-help__heading"><h3 class="heading-2">Can't find what you're looking for?</h3></div>
+        <div class="section-help__cta">
+          <a class="button button--48 button--blue button--inline" href="mailto:contact@shnappy.com">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>

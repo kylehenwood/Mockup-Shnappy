@@ -1,0 +1,94 @@
+---
+import Base from '../layouts/Base.astro';
+
+const plans = [
+  { name: 'Indy', color: 'text-yellow', price: '$4', clients: 'up to 5 clients', features: [{ tier: 'yellow', label: 'Indy Features' }] },
+  { name: 'Freelancer', color: 'text-green', price: '$12', clients: 'up to 10 clients', features: [
+    { tier: 'yellow', label: 'Indy Features' },
+    { tier: 'green', label: 'Freelancer Features' },
+  ]},
+  { name: 'Professional', color: 'text-blue', price: '$29', clients: 'up to 30 clients', features: [
+    { tier: 'yellow', label: 'Indy Features' },
+    { tier: 'green', label: 'Freelancer Features' },
+    { tier: 'blue', label: 'Professional Features' },
+  ]},
+];
+
+const faqs = [
+  { q: 'How does the free trial work?', a: "We offer a fully featured 30 day free trial for you to get started. Once you are ready, you can pick a plan and start your paid subscription. If your trial expires, your account becomes inactive — you can reactivate it later." },
+  { q: 'Can I change plans later?', a: 'Yep! You can upgrade or downgrade your plan any time. Your payments are adjusted on a pro-rated basis.' },
+  { q: 'What payment methods do you accept?', a: 'We currently accept Paypal and New Zealand bank transfer.' },
+  { q: 'Do I need a Dropbox account?', a: 'You do — Shnappy keeps your photos safe in your Dropbox. The free Dropbox plan is perfect.' },
+  { q: 'Do I need a website/hosting service?', a: "Nope — your Shnappy portfolio is hosted on our fully managed, fast, and secure cloud platform." },
+  { q: 'What is your cancellation policy?', a: "You can cancel at any time. Once you cancel, your client galleries will no longer be accessible." },
+  { q: 'Do you offer a money-back guarantee?', a: "If you're not completely happy with Shnappy in your first 30 days we'll refund any payments made." },
+  { q: 'How long are your contracts?', a: "We don't do contracts! You're free to stay as long as you'd like." },
+];
+---
+<Base title="Pricing — Shnappy" active="pricing">
+  <div class="layout__section layout__section--grey">
+    <div class="center center--1120">
+      <div class="pricing-banner">
+        <div class="pricing-banner__headline">
+          <h1 class="heading-1 text-grey">Simple Pricing</h1>
+          <h4 class="heading-subtitle">All prices in USD</h4>
+        </div>
+        <div class="pricing-banner__cards">
+          <div class="pricing-grid clearfix">
+            {plans.map(plan => (
+              <div class="pricing-grid__item">
+                <div class="card-plan">
+                  <div class={`card-plan__title ${plan.color}`}>{plan.name}</div>
+                  <div class="card-plan__price">{plan.price}</div>
+                  <div class="card-plan__month">/month</div>
+                  <div class="card-plan__clients">{plan.clients}</div>
+                  <div class="card-plan__features">
+                    {plan.features.map(f => (
+                      <a class="plan-features" href={`/features#${f.tier}`}>
+                        <div class={`plan-features__icon plan-features__icon--${f.tier}`}></div>
+                        <div class="plan-features__name">{f.label}</div>
+                        <div class="plan-features__arrow">→</div>
+                      </a>
+                    ))}
+                  </div>
+                  <div class="card-plan__button">
+                    <a class="button button--40 button--pink" href="/sign-up">Start trial</a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="pricing-banner__note">
+          <p>All new accounts start on a 30 day trial of our <strong class="text-blue">Professional</strong> plan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout__section layout__section--white">
+    <div class="center center--1120">
+      <div class="faq-heading"><h1 class="heading-2">Frequently Asked Questions about Pricing</h1></div>
+      <div class="faq-grid">
+        {faqs.map(item => (
+          <div class="faq-grid__item">
+            <div class="faq-block typography">
+              <h4>{item.q}</h4>
+              <p>{item.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="layout__signup">
+    <div class="section-signup">
+      <div class="section-signup__heading"><h2 class="heading-2 text-white text-center">What are you waiting for?</h2></div>
+      <div class="section-signup__cta">
+        <a class="button button--48 button--pink button--inline" href="/sign-up">Get started now!</a>
+      </div>
+      <div class="section-signup__credit">No credit card required, free for 30 days.</div>
+    </div>
+  </div>
+</Base>

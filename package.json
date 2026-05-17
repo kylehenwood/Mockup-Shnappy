@@ -1,0 +1,19 @@
+{
+  "name": "shnappy",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:website": "npm run dev --workspace=@shnappy/website",
+    "dev:app": "npm run dev --workspace=@shnappy/app",
+    "build": "npm run build --workspaces --if-present",
+    "build:website": "npm run build --workspace=@shnappy/website",
+    "build:app": "npm run build --workspace=@shnappy/app"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

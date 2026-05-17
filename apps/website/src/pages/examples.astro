@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+const examples = [
+  { title: 'Family Example', count: '23 Photos' },
+  { title: 'Wedding Example', count: '72 Photos' },
+  { title: 'Photoshoot Example', count: '43 Photos' },
+];
+---
+<Base title="Examples — Shnappy" active="examples">
+  <div class="layout__section layout__section--grey">
+    <div class="center center--1120">
+      <div class="example-banner">
+        <div class="example-banner__headline">
+          <h1 class="heading-1 text-pink">Example Galleries</h1>
+          <h4 class="heading-subtitle">Select an example below to open a Gallery</h4>
+        </div>
+
+        <div class="example-banner__cards">
+          <div class="card-container clearfix">
+            {examples.map(ex => (
+              <div class="card-container__item">
+                <a class="card-gallery" href="#">
+                  <div class="card-gallery__image"></div>
+                  <div class="card-gallery__content">
+                    <div class="card-gallery__content-title">{ex.title}</div>
+                    <div class="card-gallery__content-photo-count">{ex.count}</div>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="gallery-description">
+          <div class="gallery-description__description">
+            <div class="typography">
+              <h2>Creating a Gallery</h2>
+              <p>Creating a Gallery in Shnappy is easy — click create and drag your photos and folders in.</p>
+              <p>Once your photos have been uploaded, the Gallery is available to share with your clients.</p>
+              <h4>Gallery features</h4>
+              <ul>
+                <li>Password protected. You choose whether clients can share the Gallery.</li>
+                <li>Commenting and favouriting — get notified when a client likes or asks a question.</li>
+                <li>Viewers can select photos and request reviews or purchases.</li>
+                <li>Watermarking toggle — Shnappy can watermark all your photos as you upload.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gallery-description__action">
+            <a class="button button--48 button--pink" href="/sign-up">Create your own Gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout__section layout__section--white">
+    <div class="center center--1120">
+      <div class="grid">
+        <div class="row row--align-center">
+          <div class="col-lg-6 col-sm-12">
+            <div class="website-example">
+              <div class="website-example__heading"><h1 class="heading-2">Studio Website Example</h1></div>
+              <div class="website-example__content">
+                <div class="typography">
+                  <p>The studio website lets you share the work you are most proud of with the world. Visitors can view your work and contact you directly.</p>
+                  <p>It's a great way to showcase your work to possible clients, and a gateway for new clients to contact you.</p>
+                  <p>This feature is only available to <strong class="text-blue">Professional</strong> plans.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12"><div class="example-website"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>

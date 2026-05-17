@@ -1,0 +1,97 @@
+---
+import '@shnappy/styles/global.scss';
+interface Props {
+  title: string;
+  description?: string;
+  active?: 'home' | 'features' | 'examples' | 'pricing' | 'help';
+}
+const { title, description = 'Shnappy — Client proofing made easy.', active = 'home' } = Astro.props;
+const navItems = [
+  { id: 'features', label: 'Features', href: '/features' },
+  { id: 'examples', label: 'Examples', href: '/examples' },
+  { id: 'pricing', label: 'Pricing', href: '/pricing' },
+] as const;
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Signika:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="layout__header">
+      <div class="center center--1120">
+        <div class="header">
+          <div class="header__logo"><a href="/">Shnappy</a></div>
+          <div class="header__navigation">
+            <div class="navigation">
+              {navItems.map(item => (
+                <a class={`navigation__item${active === item.id ? ' navigation__item--active' : ''}`} href={item.href}>
+                  <span class="navigation__item-text">{item.label}</span>
+                </a>
+              ))}
+              <span class="navigation__space"></span>
+              <a class={`navigation__item${active === 'help' ? ' navigation__item--active' : ''}`} href="/help">
+                <span class="navigation__item-text">Help center</span>
+              </a>
+            </div>
+          </div>
+          <div class="header__client">
+            <div class="not-logged-in">
+              <a class="not-logged-in__signin" href="/sign-in">Log in</a>
+              <a class="not-logged-in__signup" href="/sign-up">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <slot />
+    </main>
+
+    <div class="layout__footer">
+      <div class="center center--1120">
+        <div class="footer">
+          <div class="footer__navigation">
+            <div>
+              <h4 class="footer-navigation__heading">Product</h4>
+              <a class="footer-navigation__link" href="/">Introduction</a>
+              <a class="footer-navigation__link" href="/features">Features</a>
+              <a class="footer-navigation__link" href="/examples">Examples</a>
+              <a class="footer-navigation__link" href="/pricing">Pricing</a>
+            </div>
+            <div>
+              <h4 class="footer-navigation__heading">Resources</h4>
+              <a class="footer-navigation__link" href="/help">Help center</a>
+              <a class="footer-navigation__link" href="mailto:contact@shnappy.com">contact@shnappy.com</a>
+            </div>
+            <div>
+              <h4 class="footer-navigation__heading">Follow</h4>
+              <div class="footer-social">
+                <a class="footer-social__link" href="#twitter" aria-label="Twitter"></a>
+                <a class="footer-social__link" href="#facebook" aria-label="Facebook"></a>
+                <a class="footer-social__link" href="#instagram" aria-label="Instagram"></a>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="footer__border"></div>
+          <div class="footer__general">
+            <div class="footer-copyright">&copy; Shnappy {year}</div>
+            <div class="footer-legal">
+              <a class="footer-legal__link" href="/terms">Terms &amp; Conditions</a>
+              <a class="footer-legal__link" href="/privacy">Privacy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

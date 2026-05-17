@@ -1,0 +1,89 @@
+---
+import Base from '../layouts/Base.astro';
+
+const photographerFeatures = [
+  { title: 'Cloud or Dropbox storage', body: 'Keep photos under your control in Dropbox, or in our managed cloud.' },
+  { title: 'Automatic watermarking', body: 'Upload once and let Shnappy apply your watermark for you.' },
+  { title: 'Bulk upload', body: 'Drag whole folders into Shnappy — we handle the thumbnails.' },
+  { title: 'Activity notifications', body: 'Get notified the instant a client comments, favourites, or downloads.' },
+  { title: 'Branded delivery', body: 'Your clients see your studio brand throughout the gallery experience.' },
+  { title: 'Portfolio site', body: 'Showcase your best work with a fully managed portfolio site.' },
+];
+const clientFeatures = [
+  { title: 'Mobile-ready proofing', body: 'Galleries look great on phones, tablets, laptops, and TVs.' },
+  { title: 'Comment on photos', body: 'No more awkward email threads — discuss each photo in context.' },
+  { title: 'Favourite & select', body: 'Mark favourites and build a selection your photographer can review.' },
+  { title: 'Password protection', body: 'Galleries are private by default; share with whoever you choose.' },
+  { title: 'Direct downloads', body: 'Grab the final photos in one click when proofing is complete.' },
+  { title: 'No account required', body: 'Clients open a link — no sign-up, no friction.' },
+];
+---
+<Base title="Features — Shnappy" active="features">
+  <div class="layout__banner layout__banner--beta layout__banner--pink">
+    <div class="center center--1120">
+      <div class="features-banner">
+        <h1 class="heading-1 text-white text-center">Everything you need to amaze your clients</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout__section layout__section--grey">
+    <div class="center center--1120">
+      <div class="feature-page">
+        <div class="feature-page__navigation">
+          <div class="feature-navigation clearfix">
+            <div class="feature-navigation__label">Filter features:</div>
+            <div class="feature-navigation__item feature-navigation__item--active">All</div>
+            <div class="feature-navigation__item">Freelancer</div>
+            <div class="feature-navigation__item">Indy</div>
+            <div class="feature-navigation__item">Professional</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-page__section">
+        <div class="feature-page__section-heading"><h2 class="heading-3">Photographer Features</h2></div>
+        <div class="feature-page__section-content">
+          <div class="feature-grid clearfix">
+            {photographerFeatures.map(f => (
+              <div class="feature-grid__item">
+                <div class="feature-tile">
+                  <ul class="feature-tile__indicators"><li class="feature-tile__indicator"></li><li class="feature-tile__indicator"></li></ul>
+                  <h4 class="feature-tile__heading">{f.title}</h4>
+                  <div class="feature-tile__content"><p>{f.body}</p></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-page__section">
+        <div class="feature-page__section-heading"><h2 class="heading-3">Client Features</h2></div>
+        <div class="feature-page__section-content">
+          <div class="feature-grid clearfix">
+            {clientFeatures.map(f => (
+              <div class="feature-grid__item">
+                <div class="feature-tile">
+                  <ul class="feature-tile__indicators"><li class="feature-tile__indicator"></li><li class="feature-tile__indicator"></li></ul>
+                  <h4 class="feature-tile__heading">{f.title}</h4>
+                  <div class="feature-tile__content"><p>{f.body}</p></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout__signup">
+    <div class="section-signup">
+      <div class="section-signup__heading"><h2 class="heading-2 text-white text-center">What are you waiting for?</h2></div>
+      <div class="section-signup__cta">
+        <a class="button button--48 button--pink button--inline" href="/sign-up">Get started now!</a>
+      </div>
+      <div class="section-signup__credit">No credit card required, free for 30 days.</div>
+    </div>
+  </div>
+</Base>

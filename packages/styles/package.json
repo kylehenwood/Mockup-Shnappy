@@ -1,0 +1,13 @@
+{
+  "name": "@shnappy/styles",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./global.scss": "./src/global.scss",
+    "./legacy-app.css": "./src/legacy-app.css",
+    "./tokens": "./src/_tokens.scss",
+    "./mixins": "./src/_mixins.scss"
+  },
+  "files": ["src"]
+}

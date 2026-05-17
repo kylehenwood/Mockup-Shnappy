@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Sign up — Shnappy">
+  <div class="layout__section layout__section--grey">
+    <div class="auth">
+      <h1>Sign up</h1>
+      <form action="http://localhost:5174/sign-up" method="get">
+        <label>Name<input type="text" name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Password<input type="password" name="password" required /></label>
+        <button type="submit">Create account</button>
+      </form>
+    </div>
+  </div>
+</Base>

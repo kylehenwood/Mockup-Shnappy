@@ -49,3 +49,10 @@ Temporary Items
 # Ignore below this
 node_modules/
 .sass-cache/
+dist/
+.astro/
+.vite/
+.cache/
+.env
+.env.local
+*.log
